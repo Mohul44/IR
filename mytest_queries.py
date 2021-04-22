@@ -16,7 +16,7 @@ k =10 #no. of document to retrieve
 def normalize_word(word):
 	word = re.sub('[\W_]+', '', word)
 
-
+#Function to calculate frequency and lognormal frequency of every term in query and making idf zero of query terms which are not in vocabulary
 def populate_query_freq(query_freq,vocabulary,query_logfreq,idf):
 		for tokens in query_tokens:
 			if(tokens in vocabulary):
@@ -31,6 +31,7 @@ def populate_query_freq(query_freq,vocabulary,query_logfreq,idf):
 				query_logfreq[tokens] = 0
 				idf[tokens] = 0
 
+#printing top k documents on basis of lnc.ltc scheme
 def print_relevant_documents(docs_dict,retir_k,sqrt_doc):
 	i = 1
 	for doc in retir_k:
@@ -96,14 +97,17 @@ while True:
   
     sos_query_square = np.sqrt(sos_query)
 
+    #Calculating tdf-idf weights of every term.
     for tokens in query_freq:
     	query_tdfidf[tokens] = (query_tdfidf[tokens])/sos_query_square
 
+    #Calculating score of every document on basic of lnc.ltc scheme.
     for tokens in query_freq:
     	if tokens in vocabulary:
     		for doc in tdf[tokens]:
     			score_d[doc] = score_d[doc] + query_tdfidf[tokens]*normd[tokens][doc]
 
+    #Sorting the dictionary and reversing it to have values in descending order.
     sorted_score_d = dict( sorted(score_d.items(), key=operator.itemgetter(1),reverse = True))
     square_doc = 0
     for doc in score_d:
