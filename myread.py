@@ -95,34 +95,9 @@ for word in vocabulary:
         idf[word] = np.log10(len(doc_id)/len(normd[word]))
     
 
-# vocab_file = open('vocabularyfile', 'wb')
-# pickle.dump(vocabulary,vocab_file)
-# vocab_file.close()
-
 pickle_file('vocabularyfile',vocabulary)
 pickle_file('tdffile',tdf)
 pickle_file('weightfile',weight)
 pickle_file('normfile',normd)
 pickle_file('idfile',idf)
 pickle_file('docdict',docs_dict)
-
-
-# tdfile = open('tdffile', 'wb')
-# pickle.dump(tdf,tdfile)
-# tdfile.close()
-
-# weightfile = open('weightfile', 'wb')
-# pickle.dump(weight,weightfile)
-# weightfile.close()
-
-# normdfile = open('normfile', 'wb')
-# pickle.dump(normd,normdfile)
-# normdfile.close()
-
-# idfile = open('idfile', 'wb')
-# pickle.dump(idf,idfile)
-# idfile.close()
-
-# dmntdictionary = open('docdict', 'wb')
-# pickle.dump(docs_dict,dmntdictionary)
-# dmntdictionary.close()
