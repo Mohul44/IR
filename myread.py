@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoupz
+from bs4 import BeautifulSoup
 import codecs
 import pickle
 import time
@@ -17,7 +17,7 @@ def normalize_word(word,temp_index):
 
 all_docs = []
 
-for i in [37]:
+for i in [37,64]:
     f = open("M:\IRassignment\Ranked-Retrieval-main\Ranked-Retrieval-main\myfolder\wiki_" + str(i), encoding="utf8")
     data = f.read()
     docs = BeautifulSoup(data, "lxml")
@@ -28,18 +28,15 @@ doc_id = []
 doc_title = []
 doc_text = []
 docs_dict = {}
-for doc in docs.find_all('doc'):
-    id = doc["id"]
-    title = doc["title"]
-    text = doc.get_text()
-    doc_id.append(id)
-    doc_title.append(title)
-    doc_text.append(text)
-    docs_dict[id] = title
-
-
-# print(all_docs)
-# print(docs_dict)
+for docs in all_docs:
+    for doc in docs.find_all('doc'):
+        id = doc["id"]
+        title = doc["title"]
+        text = doc.get_text()
+        doc_id.append(id)
+        doc_title.append(title)
+        doc_text.append(text)
+        docs_dict[id] = title
 
 tokens = []
 tdf = {}
@@ -62,10 +59,10 @@ for i in vocabulary:
     normd[i] = {}
     idf[i] = 0   
 
-print(len(doc_id))
+#print(len(doc_id))
 for i in range(len(doc_id)):
     docid = doc_id[i]
-    print(docid)
+    #print(docid)
     tokens = nltk.word_tokenize(doc_text[i])
     for word in tokens:
         if word in tdf:
@@ -85,7 +82,7 @@ for word in tdf:
     for docid in tdf[word]:
          normd[word][docid] = (weight[word][docid] / square)
 
-print(len(normd))
+#print(len(normd))
 for word in vocabulary:
     if(len(normd[word])==0):
         idf[word] = 0

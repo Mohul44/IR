@@ -16,6 +16,31 @@ k =10 #no. of document to retrieve
 def normalize_word(word):
 	word = re.sub('[\W_]+', '', word)
 
+
+def populate_query_freq(query_freq,vocabulary,query_logfreq,idf):
+		for tokens in query_tokens:
+			if(tokens in vocabulary):
+				if tokens in query_freq:
+					query_freq[tokens] = query_freq[tokens] + 1
+					query_logfreq[tokens] = (1 + np.log10(query_logfreq[tokens]))
+				else:
+					query_freq[tokens] = 1
+					query_logfreq[tokens] = 1
+			else:
+				query_freq[tokens] = 0
+				query_logfreq[tokens] = 0
+				idf[tokens] = 0
+
+def print_relevant_documents(docs_dict,retir_k,sqrt_doc):
+	i = 1
+	for doc in retir_k:
+		doctitlee = docs_dict[doc]
+		print(str(i)+"  Document #" + str(doc) + " " + "Title: " + str(doctitlee) + "  score  " + str(float(retir_k[doc]/sqrt_doc)))  
+		i = i+1
+		if(i>k):break
+
+
+
 normdfile = open("normfile", 'rb')
 normd = pickle.load(normdfile)
 
@@ -61,21 +86,7 @@ while True:
     query_tdfidf = {}
     query_logfreq = {}
     sos_query = 0
-
-    for tokens in query_tokens:
-    	if(tokens in vocabulary):
-    		print('inside')
-    		if tokens in query_freq:
-    			query_freq[tokens] = query_freq[tokens] + 1
-    			query_logfreq[tokens] = (1 + np.log10(query_logfreq[tokens]))
-    			
-    		else:
-    			query_freq[tokens] = 1
-    			query_logfreq[tokens] = 1 
-    	else:
-    		query_freq[tokens] = 0
-    		query_logfreq[tokens] = 0
-    		idf[tokens] = 0
+    populate_query_freq(query_freq,vocabulary,query_logfreq,idf)
 
     for tokens in query_freq:
     	query_tdfidf[tokens] = query_logfreq[tokens]*idf[tokens]
@@ -101,12 +112,7 @@ while True:
     sqrt_doc = np.sqrt(square_doc)
 
     retir_k = sorted_score_d
-    i = 1
-    for doc in retir_k:
-    	doctitlee = docs_dict[doc]
-    	print(str(i)+"  Document #" + str(doc) + " " + "Title: " + str(doctitlee) + "  score  " + str(float(retir_k[doc]/sqrt_doc)))  
-    	i = i+1
-    	if(i>k):break
+    print_relevant_documents(docs_dict,retir_k,sqrt_doc)
 
     #To break out from the loop/continue.
     if input("\nInput E to exit and any other key to enter another query: ").lower()=='e':
