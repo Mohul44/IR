@@ -15,6 +15,11 @@ def normalize_word(word,temp_index):
 	if len(word)>1:
 		update_doc_index(word,temp_index)
 
+def pickle_file(filename,variable):
+    fileopen = open(filename, 'wb')
+    pickle.dump(variable,fileopen)
+    fileopen.close()
+
 all_docs = []
 
 for i in [37,64]:
@@ -90,26 +95,34 @@ for word in vocabulary:
         idf[word] = np.log10(len(doc_id)/len(normd[word]))
     
 
-vocab_file = open('vocabularyfile', 'wb')
-pickle.dump(vocabulary,vocab_file)
-vocab_file.close()
+# vocab_file = open('vocabularyfile', 'wb')
+# pickle.dump(vocabulary,vocab_file)
+# vocab_file.close()
 
-tdfile = open('tdffile', 'wb')
-pickle.dump(tdf,tdfile)
-tdfile.close()
+pickle_file('vocabularyfile',vocabulary)
+pickle_file('tdffile',tdf)
+pickle_file('weightfile',weight)
+pickle_file('normfile',normd)
+pickle_file('idfile',idf)
+pickle_file('docdict',docs_dict)
 
-weightfile = open('weightfile', 'wb')
-pickle.dump(weight,weightfile)
-weightfile.close()
 
-normdfile = open('normfile', 'wb')
-pickle.dump(normd,normdfile)
-normdfile.close()
+# tdfile = open('tdffile', 'wb')
+# pickle.dump(tdf,tdfile)
+# tdfile.close()
 
-idfile = open('idfile', 'wb')
-pickle.dump(idf,idfile)
-idfile.close()
+# weightfile = open('weightfile', 'wb')
+# pickle.dump(weight,weightfile)
+# weightfile.close()
 
-dmntdictionary = open('docdict', 'wb')
-pickle.dump(docs_dict,dmntdictionary)
-dmntdictionary.close()
+# normdfile = open('normfile', 'wb')
+# pickle.dump(normd,normdfile)
+# normdfile.close()
+
+# idfile = open('idfile', 'wb')
+# pickle.dump(idf,idfile)
+# idfile.close()
+
+# dmntdictionary = open('docdict', 'wb')
+# pickle.dump(docs_dict,dmntdictionary)
+# dmntdictionary.close()
