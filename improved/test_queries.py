@@ -11,10 +11,9 @@ TITLE_FACTOR = 0.75
 BODY_FACTOR = 0.25 
 # Top K documents retrieved for the query
 K=10
-# No of total documents
-NO_DOCS
+
 # No of docs in a champion list
-R
+R=100
 '''This test query file is build for index of the form 
     {
         'word1':(
@@ -47,13 +46,14 @@ def preprocess_query(query_text):
     #remove additional whitespace created from steps above
     query_text = re.sub(' +',' ',query_text)  
     #split the query text
-    query_tokens = re.split(', |_|-|!|?| ', query_text)
+    # query_tokens = re.split(', |_|-|!|?', query_text)
+    query_tokens = filter(None, re.split("[, \-!?:_]+", query_text))
     #lowercase 
     query_tokens = [x.lower() for x in query_tokens]
     #only alphanumeric characters allowed in tokens
     alphanumeric = re.compile('[^a-zA-Z0-9]')
     query_tokens = [alphanumeric.sub('', x) for x in query_tokens]
-
+    print(query_tokens)
     return query_tokens
 
 
@@ -70,10 +70,10 @@ def buildqueryvector(query_tokens, index):
     for token in query_tokens:
         #checking whether token is in vocabulary
         if index.get(token,None) is None:
-            print("WARNING: {} is not in vocabulary".format{token})
+            print("WARNING: {} is not in vocabulary".format(token))
             continue
         #updating query index
-        if query_vector.has_key(token):
+        if token in query_vector:
             query_vector[token] = query_vector.get(token,0) + 1
         else:
             query_vector[token] = 1    
@@ -82,7 +82,7 @@ def buildqueryvector(query_tokens, index):
     q_norm = 0
     for token in query_vector:
         
-        tf_weight = 1 + log(query_vector[token],10)
+        tf_weight = 1 + math.log(query_vector[token],10)
         df = (index[token])[1]
         idf = math.log(NO_DOCS/df,10)
         score = tf_weight*idf
@@ -111,8 +111,10 @@ def score_documents(index, query_vector):
 
         champion_list = (index[token])[0]
 
-        for doc_id,tf_equivalent in champion_list.items():
-            if scores.haskey(docid):
+        for entry in champion_list:
+            docid = entry[0]
+            tf_equivalent = entry[1]
+            if docid in scores:
                 scores[docid] += query_vector[token] * tf_equivalent
             else:
                 scores[docid] = query_vector[token] * tf_equivalent
@@ -135,32 +137,32 @@ def display_K_docs(sorted_scores):
         return
 
     if(num_of_docs_retrieved < K):
-        print("WARNING: only {} documents retrieved for the given query\n".format{num_of_docs_retrieved})
+        print("WARNING: only {} documents retrieved for the given query\n".format(num_of_docs_retrieved))
 
     no_doc_shown = min(num_of_docs_retrieved, K)
 
     for count in range(no_doc_shown):
-        print("{}. \tid: {} \tscore: {}".format(count+1:2,sorted_scores[count][0]:5,sorted_scores[count][1]:5))
-        print("\ttitle: {}".format(titleidmap[sorted_scores[count][0]]:100 ))
+        print("{}. \tid: {} \tscore: {}".format(count+1,sorted_scores[count][0],sorted_scores[count][1]))
+        print("\ttitle: {}".format(titleidmap[sorted_scores[count][0]] ))
 
 
 
 def readpickle(pkl_filename):
-	'''
-        reads and returns the pickled index/map; 
-        index format is specified in top
-    '''
-    
-    pklfile = open(pkl_filename, "rb")
-	indexormap = pickle.load(pklfile)
-	pklfile.close()
-	return indexormap
+        '''
+            reads and returns the pickled index/map; 
+            index format is specified in top
+        '''  
+        pklfile = open(pkl_filename, "rb")
+        indexormap = pickle.load(pklfile)
+        pklfile.close()
+        return indexormap
 
 
-titleidmap = readIndex("DOCID-title-map")
+titleidmap = readpickle("DOCID-title-map")
+# No of total documents
 NO_DOCS = len(titleidmap)
 
-index = readIndex("index")
+index = readpickle("index")
 
 print("please start the test query entering process")
 print("Language:English; Preferred format:space separated query,one at a time,try rephrasing if retrieved docs are less than expected")
@@ -183,7 +185,7 @@ while True:
     display_K_docs(sorted_scores)
 
     # to stop the process
-    ip = input("\nInput 'DONE' to stop, else enter anything else to continue querying")
+    ip = input("\nInput 'DONE' to stop, else enter anything else to continue querying\n")
     if ip=='DONE':
         break
 

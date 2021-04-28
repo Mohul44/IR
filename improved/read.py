@@ -119,6 +119,10 @@ data_file = open("index", "wb")
 pickle.dump(data_index, data_file)
 data_file.close()
 
+titleidmap = open("DOCID-title-map", "wb")
+pickle.dump(id_title_index, titleidmap)
+titleidmap.close()
+
 index_file = open("index", "rb")
 primIndex = pickle.load(index_file)
 index_file.close()
