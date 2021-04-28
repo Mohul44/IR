@@ -22,6 +22,31 @@ def champion_list(data_index):
         posting_list.sort(key=operator.itemgetter(1),reverse=True)
         data_index[word] = (posting_list[0:100],tp[1])   
 
+#Normalizes the index scores.
+def normalize(data_index):
+    norm = {}
+    for word,tp in data_index.items():
+        posting_list = tp[0]
+        df = tp[1]
+        #Traversing the posting list.
+        for i in range(len(posting_list)):
+            doc_id = posting_list[i][0]
+            tf = posting_list[i][1]
+            #Updating the normalization factor for the document.
+            norm[doc_id] = norm.get(doc_id,0) + (tf**2)
+
+    #Getting the value of normalization factor for each document.
+    for doc_id in norm:
+    	norm[doc_id] = math.sqrt(norm[doc_id])
+
+    #Normalizing the scores of each term-document pair.
+    for word,tp in data_index.items():
+        posting_list = tp[0]
+        for i in range(len(posting_list)):
+            doc_id = posting_list[i][0]
+            wt = posting_list[i][1]
+            new_wt = wt/norm[doc_id]
+            posting_list[i] = (doc_id,new_wt)
 
 #Updates the main index using the temporary index created for document.
 def update_index(temp_index,data_index,doc_id):
@@ -113,11 +138,13 @@ id_title_index = {}
 
 read_file("wiki_37", data_index)
 # read_file("wiki_64", data_index)
+normalize(data_index)
 champion_list(data_index)
 doc_count = len(id_title_index)
 data_file = open("index", "wb")
 pickle.dump(data_index, data_file)
 data_file.close()
+
 
 titleidmap = open("DOCID-title-map", "wb")
 pickle.dump(id_title_index, titleidmap)
