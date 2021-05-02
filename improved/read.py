@@ -24,7 +24,6 @@ def champion_list(data_index):
 
 #Normalizes the index scores.
 def normalize(data_index):
-    norm = {}
     for word,tp in data_index.items():
         posting_list = tp[0]
         df = tp[1]
@@ -35,25 +34,25 @@ def normalize(data_index):
             #Updating the normalization factor for the document.
             norm[doc_id] = norm.get(doc_id,0) + (tf**2)
 
-    #Getting the value of normalization factor for each document.
-    for doc_id in norm:
-    	norm[doc_id] = math.sqrt(norm[doc_id])
+    # #Getting the value of normalization factor for each document.
+    # for doc_id in norm:
+    # 	norm[doc_id] = math.sqrt(norm[doc_id])
 
-    #Normalizing the scores of each term-document pair.
-    for word,tp in data_index.items():
-        posting_list = tp[0]
-        for i in range(len(posting_list)):
-            doc_id = posting_list[i][0]
-            wt = posting_list[i][1]
-            new_wt = wt/norm[doc_id]
-            posting_list[i] = (doc_id,new_wt)
+    # #Normalizing the scores of each term-document pair.
+    # for word,tp in data_index.items():
+    #     posting_list = tp[0]
+    #     for i in range(len(posting_list)):
+    #         doc_id = posting_list[i][0]
+    #         wt = posting_list[i][1]
+    #         new_wt = wt/norm[doc_id]
+    #         posting_list[i] = (doc_id,new_wt)
 
 #Updates the main index using the temporary index created for document.
 def update_index(temp_index,data_index,doc_id):
 	for word,tf in temp_index.items():
 		wordTuple = data_index.get(word,([],0))
 		post = wordTuple[0]
-		post.append((doc_id, (tf[1]*title_wt+tf[0]*content_wt)))
+		post.append((doc_id, float(tf[1]*title_wt+tf[0]*content_wt)))
 		data_index[word] = (post,wordTuple[1]+1)
 
 
@@ -112,7 +111,6 @@ def update_temp_doc_index(word,doc_id,temp_doc_index):
     temp_doc_index[word] = temp_doc_index.get(word,0)+1
 
 def open_file(file_name):  
-    # print("hello")
     f = open(os.path.join(os.path.dirname(__file__),
              os.pardir, file_name), encoding="utf8")
     data = f.read()
@@ -120,7 +118,6 @@ def open_file(file_name):
 
 
 def read_file(file_name, data_index):
-    # print("hello")
     global id_title_index
     data = open_file(file_name=file_name)
     docs = BeautifulSoup(data, "html.parser")
@@ -129,17 +126,21 @@ def read_file(file_name, data_index):
         title = doc["title"]
         text = doc.get_text()
         id_title_index[id] = title
-        # add_title_to_index(title,id,data_index)
         add_doc_to_index(text, title,id, data_index)
 
 
+start = time.time()  
+
 data_index = {}
 id_title_index = {}
-
+norm = {}
 read_file("wiki_37", data_index)
 # read_file("wiki_64", data_index)
 normalize(data_index)
 champion_list(data_index)
+
+end = time.time()      
+
 doc_count = len(id_title_index)
 data_file = open("index", "wb")
 pickle.dump(data_index, data_file)
@@ -150,9 +151,18 @@ titleidmap = open("DOCID-title-map", "wb")
 pickle.dump(id_title_index, titleidmap)
 titleidmap.close()
 
+
+normmap = open("Norm-map", "wb")
+pickle.dump(norm, normmap)
+normmap.close()
+
 index_file = open("index", "rb")
 primIndex = pickle.load(index_file)
 index_file.close()
+
+norm_file = open("Norm-map", "rb")
+norm_data = pickle.load(norm_file)
+norm_file.close()
 
 output_file = open("readable_content_index.txt","w")
 print("\nContent index saved in readable format in 'readable_content_index.txt'.")
@@ -161,3 +171,13 @@ for key,val in primIndex.items():
 	output_file.write("\n\tDF = "+str(val[1]))
 	output_file.write("\n\tPosting List: "+str(val[0]))
 output_file.close()
+
+output_file = open("readable_content_norm.txt","w")
+for key,val in norm_data.items():
+	output_file.write("\n\n"+key+":")
+	output_file.write("\n\tNorm constant = "+str(val))
+output_file.close()
+
+print("\nNumber of documents parsed = "+str(doc_count))
+print("Size of vocabulary = "+str(len(data_index)))
+print("Time taken for parsing and indexing = "+str(end-start)+" seconds.\n")
