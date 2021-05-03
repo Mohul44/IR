@@ -14,8 +14,8 @@ import string
 # except LookupError:
 #     nltk.download('punkt')
 
-content_wt=0.25
-title_wt=0.75
+content_wt=0.4
+title_wt=0.6
 
 def champion_list(data_index):
     for word,tp in data_index.items():
@@ -170,9 +170,8 @@ start = time.time()
 data_index = {}
 id_title_index = {}
 norm = {}
-read_file("wiki_00",data_index)	#Parsing the first file
-read_file("wiki_01",data_index)	#Parsing the second file
-read_file("wiki_02",data_index)	#Parsing the third file
+read_file("wiki_37",data_index)	#Parsing the first file
+read_file("wiki_64",data_index)	#Parsing the second file
 normalize(data_index)
 champion_list(data_index)
 

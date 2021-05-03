@@ -111,7 +111,7 @@ def buildqueryvector(query_tokens, index, MINIDF):
     # else do basic vector model
     # if all terms are high idf return the query vector 
 
-    if remaining_terms < 3 or remaining_terms==len(query_idf):
+    if remaining_terms < 2 or remaining_terms==len(query_idf):
         return query_vector
     # removing low odf terms and calculate query vector again 
     for token in query_idf:

@@ -102,9 +102,8 @@ start = time.time()
 data_index = {}
 norm = {}
 id_title_index = {}
-read_file("wiki_00",data_index)	#Parsing the first file
-read_file("wiki_01",data_index)	#Parsing the second file
-read_file("wiki_02",data_index)	#Parsing the third file
+read_file("wiki_37",data_index)	#Parsing the first file
+read_file("wiki_64",data_index)	#Parsing the second file
 normalize(data_index)
 # read_file("wiki_64", data_index)
 
