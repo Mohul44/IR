@@ -26,7 +26,7 @@ R=100
                 ),
         'word2':...
     }
-    tf_equivalent = cosinenorm (0.75*body_tf + 0.25*title_tf)
+    tf_equivalent = (0.75*body_tf + 0.25*title_tf)
     posting list contains top R reverse sorted docs according to
     tf_equivalent
 '''
@@ -97,9 +97,9 @@ def buildqueryvector(query_tokens, index):
     return query_vector    
 
 
-def score_documents(index, query_vector):
+def score_documents(index, query_vector, docnormmap):
     '''
-        takes index and query_vector as an input
+        takes index and query_vector and doc id and norm score map as an input
         calculate lnc.ltc scores of each document in the champion lists of 
         tokens appearing in query_vector. Assumes query_vector in 
         LTC format as specified in buildqueryvector(). Returns scores 
@@ -112,8 +112,11 @@ def score_documents(index, query_vector):
         champion_list = (index[token])[0]
 
         for entry in champion_list:
+            # update score for each doc in champion list 
             docid = entry[0]
-            tf_equivalent = entry[1]
+            # fetching square of doc norm score 
+            docnorm = math.sqrt(docnormmap[docid])
+            tf_equivalent = entry[1] / docnorm
             if docid in scores:
                 scores[docid] += query_vector[token] * tf_equivalent
             else:
@@ -159,6 +162,7 @@ def readpickle(pkl_filename):
 
 
 titleidmap = readpickle("DOCID-title-map")
+docnormmap = readpickle("Norm-map")
 # No of total documents
 NO_DOCS = len(titleidmap)
 
@@ -177,7 +181,7 @@ while True:
     start_time = time.time()
     query_token = preprocess_query(query_text)
     query_vector = buildqueryvector(query_token, index)
-    sorted_scores = score_documents(index, query_vector)
+    sorted_scores = score_documents(index, query_vector, docnormmap)
     end_time = time.time()    
     duration = end_time - start_time
     print("\n{} seconds were taken to execute the query\n".format(duration))

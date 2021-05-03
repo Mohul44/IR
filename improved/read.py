@@ -68,44 +68,75 @@ def update_temp_index(word,temp_index,flag):
 #Reads a document and updates the index.
 def add_doc_to_index(text, title, doc_id, data_index):
     temp_index = {}
-    # for line in text.splitlines():
-    text = text.replace('-', ' ') #splitting - words (decide whether to split or not)
-    title= title.replace('-', ' ')
-    for word in nltk.word_tokenize(text):
-        # for word in line.strip().split(" "):
-        word = word.lower()        #Converting word to lower case.
-    #If word only has alphabet characters, update index.
-        if word.isalpha():
-            update_temp_index(word,temp_index,1)
-	#If word has non-alphabet characters, remove them first.
-        else:
-            extract_word = []
-            for c in word:
-                if c.isalpha():
-                    extract_word.append(c)
-            if len(extract_word)>0:
-                str1=''
-                extract_word= str1.join(extract_word)
-                update_temp_index(extract_word,temp_index,1)
-    for word in nltk.word_tokenize(title):
-        # for word in line.strip().split(" "):
-        word = word.lower()        #Converting word to lower case.
-    #If word only has alphabet characters, update index.
-        if word.isalpha():
-            update_temp_index(word,temp_index,2)
-	#If word has non-alphabet characters, remove them first.
-        else:
-            extract_word = []
-            for c in word:
-                if c.isalpha():
-                    extract_word.append(c)
-            if len(extract_word)>0:
-                str1=''
-                extract_word= str1.join(extract_word)
-                update_temp_index(extract_word,temp_index,2)
+    # # for line in text.splitlines():
+    # text = text.replace('-', ' ') #splitting - words (decide whether to split or not)
+    # title= title.replace('-', ' ')
+    # for word in nltk.word_tokenize(text):
+    #     # for word in line.strip().split(" "):
+    #     word = word.lower()        #Converting word to lower case.
+    # #If word only has alphabet characters, update index.
+    #     if word.isalpha():
+    #         update_temp_index(word,temp_index,1)
+	# #If word has non-alphabet characters, remove them first.
+    #     else:
+    #         extract_word = []
+    #         for c in word:
+    #             if c.isalpha():
+    #                 extract_word.append(c)
+    #         if len(extract_word)>0:
+    #             str1=''
+    #             extract_word= str1.join(extract_word)
+    #             update_temp_index(extract_word,temp_index,1)
+    body_tokens = preprocess_query(text)
+    for token in body_tokens:
+        update_temp_index(token,temp_index,1)
+
+    title_tokens = preprocess_query(title)
+    for token in title_tokens:
+        update_temp_index(token,temp_index,2)
+
+    # for word in nltk.word_tokenize(title):
+    #     # for word in line.strip().split(" "):
+    #     word = word.lower()        #Converting word to lower case.
+    # #If word only has alphabet characters, update index.
+    #     if word.isalpha():
+    #         update_temp_index(word,temp_index,2)
+	# #If word has non-alphabet characters, remove them first.
+    #     else:
+    #         extract_word = []
+    #         for c in word:
+    #             if c.isalpha():
+    #                 extract_word.append(c)
+    #         if len(extract_word)>0:
+    #             str1=''
+    #             extract_word= str1.join(extract_word)
+    #             update_temp_index(extract_word,temp_index,2)
     # print(temp_index)
     update_index(temp_index,data_index,doc_id)
 
+def preprocess_query(text):
+    '''
+    This function tokenizes the text, converts each word to lower case, 
+    removes all punctuations,hyperlinks,special characters, etc. 
+    '''
+    #remove hyperlinks
+    text = re.sub(r'http\S+' , "",text)
+    #convert tab,nextline to single whitespace
+    text = re.sub('[\n\t]',' ',text)    
+    #remove whitespace at the ends
+    text = text.strip()
+    #remove additional whitespace created from steps above
+    text = re.sub(' +',' ',text)  
+    #split the query text
+    # query_tokens = re.split(', |_|-|!|?', query_text)
+    text_tokens = filter(None, re.split("[, \-!?:_]+", text))
+    #lowercase 
+    text_tokens = [x.lower() for x in text_tokens]
+    #only alphanumeric characters allowed in tokens
+    alphanumeric = re.compile('[^a-zA-Z0-9]')
+    text_tokens = [alphanumeric.sub('', x) for x in text_tokens]
+    # print(text_tokens)
+    return text_tokens
 
 def update_temp_doc_index(word,doc_id,temp_doc_index):
     temp_doc_index[word] = temp_doc_index.get(word,0)+1
