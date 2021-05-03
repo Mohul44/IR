@@ -30,22 +30,70 @@ for i in [37,64]:
     all_docs.extend(docs)
     f.close()
 
+
+#Adding id, titles, text of every document to doc_id, doc_title, doc_text respectively
+def indexing(doc_id,doc_title,doc_text,docs_dict,all_docs):
+    for docs in all_docs:
+        for doc in docs.find_all('doc'):
+            id = doc["id"]
+            title = doc["title"]
+            text = doc.get_text()
+            doc_id.append(id)
+            doc_title.append(title)
+            doc_text.append(text)   
+            docs_dict[id] = title
+
+
+def addto_vocabulary(doc_text,vocabulary,tdf,weight,square_weight,normd,idf,tokens):
+    #tokenizing the documents and adding them to vocabularyfil
+    for page in doc_text:
+        #print(page)
+        tokens.extend(nltk.word_tokenize(page))
+    vocabulary = sorted(set(tokens))
+    for i in vocabulary:    
+        tdf[i] = {}
+        weight[i] = {}
+        square_weight[i] = 0
+        normd[i] = {}
+        idf[i] = 0  
+    print(type(vocabulary))
+#print(len(doc_id))
+#calculating term frequency of every token with respect to document
+def calculate_tdf(doc_id,doc_text,tdf,vocabulary,weight,square_weight,normd,idf,tokens):
+    for i in range(len(doc_id)):
+        docid = doc_id[i]
+        #print(docid)
+        tokens = nltk.word_tokenize(doc_text[i])
+        for word in tokens:
+            if word in tdf:
+                if docid in tdf[word]:
+                    tdf[word][docid] = tdf[word][docid]+1
+                else:
+                    tdf[word][docid] = 1
+    #Calculating weight according to logarithmic scheme
+    for word in tdf:
+        for docid in tdf[word]:
+            weight[word][docid] = 1 + np.log(tdf[word][docid])
+            square_weight[word] = square_weight[word] + weight[word][docid]**2
+       
+    #    print(normd[word][docid])
+    #Normalizing weight
+    for word in tdf:
+        square = (np.sqrt(square_weight[word]))
+        for docid in tdf[word]:
+            normd[word][docid] = (weight[word][docid] / square)
+    #print(len(normd))
+    #Calculating idf value of terms
+    for word in vocabulary:
+        if(len(normd[word])==0):
+            idf[word] = 0
+        else:
+            idf[word] = np.log10(len(doc_id)/len(normd[word]))
+
 doc_id = []
 doc_title = []
 doc_text = []
 docs_dict = {}
-
-#Adding id, titles, text of every document to doc_id, doc_title, doc_text respectively
-for docs in all_docs:
-    for doc in docs.find_all('doc'):
-        id = doc["id"]
-        title = doc["title"]
-        text = doc.get_text()
-        doc_id.append(id)
-        doc_title.append(title)
-        doc_text.append(text)
-        docs_dict[id] = title
-
 tokens = []
 tdf = {}
 weight = {}
@@ -53,54 +101,11 @@ sos = {}
 square_weight = {}
 normd = {}
 idf = {}
-
-#tokenizing the documents and adding them to vocabulary
-for page in doc_text:
-    #print(page)
-    tokens.extend(nltk.word_tokenize(page))
-vocabulary = sorted(set(tokens))
-
-
-for i in vocabulary:    
-    tdf[i] = {}
-    weight[i] = {}
-    square_weight[i] = 0
-    normd[i] = {}
-    idf[i] = 0   
-
-#print(len(doc_id))
-#calculating term frequency of every token with respect to document
-for i in range(len(doc_id)):
-    docid = doc_id[i]
-    #print(docid)
-    tokens = nltk.word_tokenize(doc_text[i])
-    for word in tokens:
-        if word in tdf:
-            if docid in tdf[word]:
-                tdf[word][docid] = tdf[word][docid]+1
-            else:
-                tdf[word][docid] = 1
-#Calculating weight according to logarithmic scheme
-for word in tdf:
-    for docid in tdf[word]:
-        weight[word][docid] = 1 + np.log(tdf[word][docid])
-        square_weight[word] = square_weight[word] + weight[word][docid]**2
-       
-#    print(normd[word][docid])
-square = (np.sqrt(square_weight[word]))
-#Normalizing weight
-for word in tdf:
-    for docid in tdf[word]:
-         normd[word][docid] = (weight[word][docid] / square)
-
-#print(len(normd))
-#Calculating idf value of terms
-for word in vocabulary:
-    if(len(normd[word])==0):
-        idf[word] = 0
-    else:
-        idf[word] = np.log10(len(doc_id)/len(normd[word]))
+vocabulary = []
     
+indexing(doc_id,doc_title,doc_text,docs_dict,all_docs);
+addto_vocabulary(doc_text,vocabulary,tdf,weight,square_weight,normd,idf,tokens);
+calculate_tdf(doc_id,doc_text,tdf,vocabulary,weight,square_weight,normd,idf,tokens);
 
 pickle_file('vocabularyfile',vocabulary)
 pickle_file('tdffile',tdf)
