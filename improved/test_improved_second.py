@@ -109,9 +109,9 @@ def score_documents(index, query_vector):
 
     for token in query_vector:
 
-        champion_list = (index[token])[0]
+        mylist = (index[token])[0]
 
-        for entry in champion_list:
+        for entry in mylist:
             docid = entry[0]
             tf_equivalent = entry[1]
             if docid in scores:
@@ -164,6 +164,8 @@ def score_documents_modified(index, query_vector):
             docidd = docid[0]
             if(scores_count[docidd] == i):
                 scores_temp[docidd] = scores[docidd]
+            if(scores_count[docidd] == len(query_vector)):
+                scores_temp[docidd] = scores_temp[docidd] + .1
         sorted_doc = sorted(scores_temp.items(), key = operator.itemgetter(1))
         sorted_doc.reverse()
         temp_len = len(sorted_doc)
