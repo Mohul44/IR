@@ -4,31 +4,30 @@ import math
 import pickle
 import time # for time taken calcuation
 import operator # fro sorting
+import string 
 
-# Relative weightage given to appearance of a term in title of the document
-TITLE_FACTOR = 0.75 
-# Relative weightage given to appearance of a body in title of the document
-BODY_FACTOR = 0.25 
+ 
 # Top K documents retrieved for the query
 K=10
 
-# No of docs in a champion list
-R=100
+
 '''This test query file is build for index of the form 
     {
         'word1':(
                     {
-                        'doc1':(tf_equivalent),
-                        'doc2':(tf_equivalent),
+                        'doc1':(tf),
+                        'doc2':(tf),
                         ...
                     },
                     doc_freq_of_word_1
                 ),
         'word2':...
     }
-    tf_equivalent = (0.75*body_tf + 0.25*title_tf)
-    posting list contains top R reverse sorted docs according to
-    tf_equivalent
+    posting list contains contains term frequencies of respective 
+    documents along with doc freq. 
+    document vector are also normalised in this file only 
+    without taking any map from read.py file 
+    adhering to basic vector space model
 '''
 
 
@@ -46,8 +45,11 @@ def preprocess_query(query_text):
     #remove additional whitespace created from steps above
     query_text = re.sub(' +',' ',query_text)  
     #split the query text
-    # query_tokens = re.split(', |_|-|!|?', query_text)
-    query_tokens = filter(None, re.split("[, \-!?:_]+", query_text))
+    #taking deafult python punctuations and adding space charater in that
+    split_delimiter = string.punctuation + ' '
+    exp = "[" + split_delimiter + "]+" 
+    # query_tokens = filter(None, re.split("[., \-!?:_]+", query_text))
+    query_tokens = filter(None, re.split(exp, query_text))
     #lowercase 
     query_tokens = [x.lower() for x in query_tokens]
     #only alphanumeric characters allowed in tokens
@@ -97,7 +99,32 @@ def buildqueryvector(query_tokens, index):
     return query_vector    
 
 
-def score_documents(index, query_vector, docnormmap):
+def calculate_document_normfactor(index):
+    '''
+     caculate noralisation factor for each document 
+     which is sqrt (sum of squares of raw tf)
+     in lnc scheme 
+    
+    '''
+    docnormfactor = {}
+
+    for token in index:
+        posting_list = (index[token])[0]
+        len_list = len(posting_list)
+        for entry in range(len_list):
+            docid = posting_list[entry][0] 
+            tf = posting_list[entry][1]
+            if docid in docnormfactor:
+                docnormfactor[docid]= docnormfactor[docid] + tf*tf
+            else:
+                docnormfactor[docid]= tf*tf
+
+    for docid,val in docnormfactor.items():
+        docnormfactor[docid] = math.sqrt(val)
+    return docnormfactor
+
+
+def score_documents(index, query_vector, docnormfactor):
     '''
         takes index and query_vector and doc id and norm score map as an input
         calculate lnc.ltc scores of each document in the champion lists of 
@@ -115,12 +142,12 @@ def score_documents(index, query_vector, docnormmap):
             # update score for each doc in champion list 
             docid = entry[0]
             # fetching square of doc norm score 
-            docnorm = math.sqrt(docnormmap[docid])
-            tf_equivalent = entry[1] / docnorm
+            docnorm = docnormfactor[docid]
+            tf_norm = entry[1] / docnorm
             if docid in scores:
-                scores[docid] += query_vector[token] * tf_equivalent
+                scores[docid] += query_vector[token] * tf_norm
             else:
-                scores[docid] = query_vector[token] * tf_equivalent
+                scores[docid] = query_vector[token] * tf_norm
 
     sorted_scores = sorted(scores.items(), key=operator.itemgetter(1))
     sorted_scores.reverse()
@@ -162,7 +189,6 @@ def readpickle(pkl_filename):
 
 
 titleidmap = readpickle("DOCID-title-map")
-docnormmap = readpickle("Norm-map")
 # No of total documents
 NO_DOCS = len(titleidmap)
 
@@ -181,7 +207,8 @@ while True:
     start_time = time.time()
     query_token = preprocess_query(query_text)
     query_vector = buildqueryvector(query_token, index)
-    sorted_scores = score_documents(index, query_vector, docnormmap)
+    docnormfactor = calculate_document_normfactor(index)
+    sorted_scores = score_documents(index, query_vector, docnormfactor)
     end_time = time.time()    
     duration = end_time - start_time
     print("\n{} seconds were taken to execute the query\n".format(duration))
