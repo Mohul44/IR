@@ -1,0 +1,4843 @@
+
+
+12:
+	Norm constant = 75233.0625
+
+339:
+	Norm constant = 25176.4375
+
+1023:
+	Norm constant = 59561.0625
+
+25:
+	Norm constant = 27047.875
+
+39:
+	Norm constant = 5057.5
+
+290:
+	Norm constant = 1287.3125
+
+303:
+	Norm constant = 102566.875
+
+305:
+	Norm constant = 19952.5625
+
+307:
+	Norm constant = 149465.6875
+
+308:
+	Norm constant = 71933.25
+
+309:
+	Norm constant = 2578.0
+
+316:
+	Norm constant = 48.125
+
+324:
+	Norm constant = 17477.0
+
+330:
+	Norm constant = 71.375
+
+332:
+	Norm constant = 124.9375
+
+334:
+	Norm constant = 1316.875
+
+336:
+	Norm constant = 14497.9375
+
+340:
+	Norm constant = 70.875
+
+344:
+	Norm constant = 201.9375
+
+358:
+	Norm constant = 69644.5
+
+359:
+	Norm constant = 1519.6875
+
+569:
+	Norm constant = 32299.5625
+
+572:
+	Norm constant = 399.1875
+
+573:
+	Norm constant = 35866.4375
+
+580:
+	Norm constant = 372.9375
+
+586:
+	Norm constant = 13222.4375
+
+593:
+	Norm constant = 4322.4375
+
+594:
+	Norm constant = 80160.75
+
+595:
+	Norm constant = 31619.9375
+
+597:
+	Norm constant = 831.375
+
+599:
+	Norm constant = 1392.3125
+
+600:
+	Norm constant = 22827.625
+
+612:
+	Norm constant = 1462.25
+
+615:
+	Norm constant = 1042.3125
+
+620:
+	Norm constant = 13799.4375
+
+621:
+	Norm constant = 94491.5
+
+624:
+	Norm constant = 75270.25
+
+627:
+	Norm constant = 37728.9375
+
+628:
+	Norm constant = 5826.0625
+
+633:
+	Norm constant = 8089.9375
+
+634:
+	Norm constant = 22726.1875
+
+639:
+	Norm constant = 21706.6875
+
+640:
+	Norm constant = 13546.25
+
+642:
+	Norm constant = 120.6875
+
+643:
+	Norm constant = 638.9375
+
+649:
+	Norm constant = 1220.3125
+
+651:
+	Norm constant = 1319.125
+
+653:
+	Norm constant = 6568.375
+
+655:
+	Norm constant = 8481.5625
+
+656:
+	Norm constant = 6528.125
+
+657:
+	Norm constant = 24866.8125
+
+659:
+	Norm constant = 628.1875
+
+662:
+	Norm constant = 26793.0
+
+663:
+	Norm constant = 53790.3125
+
+664:
+	Norm constant = 5974.125
+
+665:
+	Norm constant = 3002.25
+
+666:
+	Norm constant = 159032.5625
+
+670:
+	Norm constant = 16126.875
+
+673:
+	Norm constant = 2505.0625
+
+674:
+	Norm constant = 34479.3125
+
+675:
+	Norm constant = 118.6875
+
+676:
+	Norm constant = 14538.1875
+
+677:
+	Norm constant = 7341.125
+
+679:
+	Norm constant = 4.5
+
+680:
+	Norm constant = 6698.1875
+
+681:
+	Norm constant = 2260.4375
+
+682:
+	Norm constant = 3050.625
+
+683:
+	Norm constant = 90.4375
+
+689:
+	Norm constant = 28659.625
+
+690:
+	Norm constant = 9865.5
+
+691:
+	Norm constant = 29464.75
+
+694:
+	Norm constant = 7.0
+
+696:
+	Norm constant = 7.4375
+
+698:
+	Norm constant = 7311.9375
+
+700:
+	Norm constant = 30679.5
+
+701:
+	Norm constant = 57770.9375
+
+704:
+	Norm constant = 645.75
+
+705:
+	Norm constant = 915.1875
+
+706:
+	Norm constant = 4855.25
+
+708:
+	Norm constant = 51.5625
+
+709:
+	Norm constant = 2920.75
+
+710:
+	Norm constant = 1937.375
+
+711:
+	Norm constant = 10759.5
+
+713:
+	Norm constant = 2730.0
+
+717:
+	Norm constant = 52785.6875
+
+734:
+	Norm constant = 335.75
+
+736:
+	Norm constant = 60634.3125
+
+737:
+	Norm constant = 75481.0
+
+738:
+	Norm constant = 123828.9375
+
+740:
+	Norm constant = 4641.5625
+
+742:
+	Norm constant = 12.25
+
+746:
+	Norm constant = 105360.3125
+
+748:
+	Norm constant = 3397.375
+
+751:
+	Norm constant = 7508.0625
+
+752:
+	Norm constant = 40808.8125
+
+764:
+	Norm constant = 225.5
+
+765:
+	Norm constant = 24326.25
+
+766:
+	Norm constant = 126.875
+
+771:
+	Norm constant = 170652.5
+
+772:
+	Norm constant = 883.375
+
+775:
+	Norm constant = 22633.75
+
+777:
+	Norm constant = 237.9375
+
+779:
+	Norm constant = 25.0625
+
+780:
+	Norm constant = 3.875
+
+782:
+	Norm constant = 5717.375
+
+783:
+	Norm constant = 74944.4375
+
+784:
+	Norm constant = 1256.125
+
+785:
+	Norm constant = 5596.5625
+
+786:
+	Norm constant = 13611.3125
+
+787:
+	Norm constant = 309.25
+
+788:
+	Norm constant = 106.0
+
+789:
+	Norm constant = 692.375
+
+791:
+	Norm constant = 22844.8125
+
+794:
+	Norm constant = 227.375
+
+795:
+	Norm constant = 757.9375
+
+798:
+	Norm constant = 12766.5625
+
+799:
+	Norm constant = 5239.125
+
+800:
+	Norm constant = 13171.9375
+
+802:
+	Norm constant = 56633.625
+
+803:
+	Norm constant = 62382.8125
+
+808:
+	Norm constant = 58410.1875
+
+809:
+	Norm constant = 99.9375
+
+824:
+	Norm constant = 7174.875
+
+825:
+	Norm constant = 1559.4375
+
+840:
+	Norm constant = 14922.0
+
+841:
+	Norm constant = 20345.75
+
+842:
+	Norm constant = 2280.4375
+
+843:
+	Norm constant = 6718.0625
+
+844:
+	Norm constant = 122983.0625
+
+846:
+	Norm constant = 11.0
+
+848:
+	Norm constant = 79270.1875
+
+849:
+	Norm constant = 6914.0625
+
+851:
+	Norm constant = 3394.5
+
+852:
+	Norm constant = 55956.8125
+
+854:
+	Norm constant = 14464.25
+
+856:
+	Norm constant = 97849.3125
+
+857:
+	Norm constant = 1949.125
+
+859:
+	Norm constant = 99.5625
+
+863:
+	Norm constant = 126689.3125
+
+864:
+	Norm constant = 30651.25
+
+868:
+	Norm constant = 1817.5625
+
+869:
+	Norm constant = 1308.9375
+
+872:
+	Norm constant = 139162.375
+
+874:
+	Norm constant = 126662.875
+
+876:
+	Norm constant = 66.3125
+
+877:
+	Norm constant = 975.625
+
+878:
+	Norm constant = 6525.4375
+
+880:
+	Norm constant = 122087.0625
+
+881:
+	Norm constant = 3450.6875
+
+887:
+	Norm constant = 4057.625
+
+888:
+	Norm constant = 2618.0625
+
+890:
+	Norm constant = 9811.75
+
+894:
+	Norm constant = 4136.6875
+
+896:
+	Norm constant = 4869.375
+
+897:
+	Norm constant = 29918.375
+
+898:
+	Norm constant = 8189.1875
+
+899:
+	Norm constant = 2082.3125
+
+900:
+	Norm constant = 17428.4375
+
+901:
+	Norm constant = 12727.0625
+
+902:
+	Norm constant = 47262.875
+
+903:
+	Norm constant = 252.125
+
+904:
+	Norm constant = 22107.3125
+
+905:
+	Norm constant = 1263.375
+
+909:
+	Norm constant = 9475.875
+
+910:
+	Norm constant = 26.0
+
+911:
+	Norm constant = 102.6875
+
+914:
+	Norm constant = 4100.25
+
+915:
+	Norm constant = 421.8125
+
+921:
+	Norm constant = 250.4375
+
+922:
+	Norm constant = 5723.5625
+
+924:
+	Norm constant = 3582.5
+
+925:
+	Norm constant = 150.9375
+
+928:
+	Norm constant = 8724.3125
+
+929:
+	Norm constant = 443.125
+
+930:
+	Norm constant = 2884.6875
+
+931:
+	Norm constant = 14396.4375
+
+951:
+	Norm constant = 7648.6875
+
+953:
+	Norm constant = 201.0
+
+954:
+	Norm constant = 31908.625
+
+956:
+	Norm constant = 5112.9375
+
+957:
+	Norm constant = 696.0
+
+958:
+	Norm constant = 5946.1875
+
+960:
+	Norm constant = 2163.5625
+
+966:
+	Norm constant = 78.0
+
+967:
+	Norm constant = 2008.5
+
+969:
+	Norm constant = 4198.5
+
+972:
+	Norm constant = 2014.875
+
+974:
+	Norm constant = 9655.125
+
+980:
+	Norm constant = 9099.75
+
+981:
+	Norm constant = 79424.375
+
+983:
+	Norm constant = 12542.8125
+
+984:
+	Norm constant = 29735.0
+
+986:
+	Norm constant = 2773.3125
+
+988:
+	Norm constant = 184.5625
+
+991:
+	Norm constant = 3437.375
+
+993:
+	Norm constant = 338.75
+
+994:
+	Norm constant = 46.8125
+
+1000:
+	Norm constant = 28955.875
+
+1002:
+	Norm constant = 4430.75
+
+1004:
+	Norm constant = 1317.5
+
+1005:
+	Norm constant = 181.625
+
+1006:
+	Norm constant = 15751.0625
+
+1014:
+	Norm constant = 7396.3125
+
+1016:
+	Norm constant = 9091.4375
+
+1017:
+	Norm constant = 38663.1875
+
+1018:
+	Norm constant = 2377.5
+
+1020:
+	Norm constant = 5473.75
+
+1021:
+	Norm constant = 181.25
+
+1022:
+	Norm constant = 8664.3125
+
+1028:
+	Norm constant = 18476.4375
+
+1029:
+	Norm constant = 27241.0625
+
+1030:
+	Norm constant = 13924.9375
+
+1032:
+	Norm constant = 2289.0625
+
+1036:
+	Norm constant = 310.375
+
+1038:
+	Norm constant = 94379.75
+
+1043:
+	Norm constant = 28.1875
+
+1049:
+	Norm constant = 5.3125
+
+1051:
+	Norm constant = 8164.5
+
+1055:
+	Norm constant = 4217.4375
+
+1057:
+	Norm constant = 592.1875
+
+1058:
+	Norm constant = 2074.0
+
+1063:
+	Norm constant = 3917.3125
+
+1064:
+	Norm constant = 8456.25
+
+1069:
+	Norm constant = 162.875
+
+1070:
+	Norm constant = 640.0
+
+1072:
+	Norm constant = 19.875
+
+1074:
+	Norm constant = 34.375
+
+1078:
+	Norm constant = 127218.6875
+
+1081:
+	Norm constant = 5345.5625
+
+1082:
+	Norm constant = 1473.4375
+
+1087:
+	Norm constant = 357.875
+
+1088:
+	Norm constant = 12219.1875
+
+1091:
+	Norm constant = 1132.0625
+
+1092:
+	Norm constant = 216.125
+
+1093:
+	Norm constant = 14726.75
+
+1094:
+	Norm constant = 33753.9375
+
+1096:
+	Norm constant = 24.5625
+
+1097:
+	Norm constant = 9405.25
+
+1098:
+	Norm constant = 845.0
+
+1109:
+	Norm constant = 40.625
+
+1110:
+	Norm constant = 13.0
+
+1111:
+	Norm constant = 616.3125
+
+1112:
+	Norm constant = 241.375
+
+1130:
+	Norm constant = 27430.8125
+
+1132:
+	Norm constant = 60531.5625
+
+1134:
+	Norm constant = 1186.4375
+
+1135:
+	Norm constant = 5411.125
+
+1136:
+	Norm constant = 21.8125
+
+1140:
+	Norm constant = 8144.125
+
+1141:
+	Norm constant = 725.0
+
+1143:
+	Norm constant = 22126.75
+
+1144:
+	Norm constant = 3158.0
+
+1146:
+	Norm constant = 4419.6875
+
+1148:
+	Norm constant = 61983.25
+
+1152:
+	Norm constant = 6514.75
+
+1158:
+	Norm constant = 391.5625
+
+1160:
+	Norm constant = 361.375
+
+1162:
+	Norm constant = 8354.5625
+
+1164:
+	Norm constant = 29402.8125
+
+1166:
+	Norm constant = 1143.9375
+
+1167:
+	Norm constant = 1355.1875
+
+1168:
+	Norm constant = 12261.625
+
+1170:
+	Norm constant = 5461.625
+
+1171:
+	Norm constant = 3788.1875
+
+1174:
+	Norm constant = 7055.3125
+
+1176:
+	Norm constant = 123.5
+
+1177:
+	Norm constant = 63653.25
+
+1178:
+	Norm constant = 87934.5625
+
+1181:
+	Norm constant = 1116.75
+
+1182:
+	Norm constant = 32671.25
+
+1183:
+	Norm constant = 3557.0625
+
+1187:
+	Norm constant = 9271.9375
+
+1192:
+	Norm constant = 5944.6875
+
+1193:
+	Norm constant = 905.3125
+
+1196:
+	Norm constant = 5131.6875
+
+1198:
+	Norm constant = 3970.8125
+
+1200:
+	Norm constant = 593.5
+
+1201:
+	Norm constant = 11998.1875
+
+1202:
+	Norm constant = 391.9375
+
+1203:
+	Norm constant = 39576.5
+
+1206:
+	Norm constant = 44199.8125
+
+1207:
+	Norm constant = 18087.0625
+
+1208:
+	Norm constant = 31975.9375
+
+1209:
+	Norm constant = 11627.5
+
+1210:
+	Norm constant = 12105.0
+
+1212:
+	Norm constant = 551.8125
+
+1213:
+	Norm constant = 957.25
+
+1214:
+	Norm constant = 170175.9375
+
+1216:
+	Norm constant = 69061.0
+
+1217:
+	Norm constant = 7302.4375
+
+1223:
+	Norm constant = 16.0
+
+1227:
+	Norm constant = 1672.1875
+
+1234:
+	Norm constant = 2461.1875
+
+1235:
+	Norm constant = 723.75
+
+1239:
+	Norm constant = 23775.4375
+
+1241:
+	Norm constant = 7396.0625
+
+1242:
+	Norm constant = 5728.4375
+
+1247:
+	Norm constant = 1185.25
+
+1252:
+	Norm constant = 13515.0
+
+1256:
+	Norm constant = 15877.0
+
+1260:
+	Norm constant = 6815.4375
+
+1262:
+	Norm constant = 89.25
+
+1264:
+	Norm constant = 1535.1875
+
+1267:
+	Norm constant = 3356.6875
+
+1270:
+	Norm constant = 19371.125
+
+1271:
+	Norm constant = 2829.3125
+
+1273:
+	Norm constant = 122300.5
+
+1274:
+	Norm constant = 238.3125
+
+1279:
+	Norm constant = 1289.625
+
+1285:
+	Norm constant = 3828.0
+
+1286:
+	Norm constant = 644.4375
+
+1288:
+	Norm constant = 20056.3125
+
+1291:
+	Norm constant = 1647.0
+
+1293:
+	Norm constant = 1122.0625
+
+1298:
+	Norm constant = 4946.0625
+
+1300:
+	Norm constant = 8385.8125
+
+1301:
+	Norm constant = 1431.5
+
+1303:
+	Norm constant = 27.25
+
+1305:
+	Norm constant = 2735.25
+
+1306:
+	Norm constant = 6430.25
+
+1307:
+	Norm constant = 2620.1875
+
+1309:
+	Norm constant = 127.6875
+
+1313:
+	Norm constant = 860.6875
+
+1315:
+	Norm constant = 17486.75
+
+1316:
+	Norm constant = 6870.6875
+
+1317:
+	Norm constant = 8798.5625
+
+1322:
+	Norm constant = 4614.6875
+
+1324:
+	Norm constant = 1485.0625
+
+1325:
+	Norm constant = 13746.875
+
+1327:
+	Norm constant = 2479.6875
+
+1331:
+	Norm constant = 49.875
+
+1335:
+	Norm constant = 703.75
+
+1336:
+	Norm constant = 387.625
+
+1338:
+	Norm constant = 19023.9375
+
+1344:
+	Norm constant = 396.25
+
+1346:
+	Norm constant = 17477.375
+
+1347:
+	Norm constant = 32257.75
+
+1348:
+	Norm constant = 17623.8125
+
+1349:
+	Norm constant = 1756.75
+
+1354:
+	Norm constant = 13996.9375
+
+1356:
+	Norm constant = 8.8125
+
+1358:
+	Norm constant = 20616.5
+
+1359:
+	Norm constant = 191.5
+
+1360:
+	Norm constant = 956.625
+
+1361:
+	Norm constant = 2873.25
+
+1362:
+	Norm constant = 419.0625
+
+1363:
+	Norm constant = 1447.125
+
+1365:
+	Norm constant = 35743.25
+
+1366:
+	Norm constant = 1779.6875
+
+1367:
+	Norm constant = 11640.125
+
+1368:
+	Norm constant = 12350.25
+
+1369:
+	Norm constant = 535.125
+
+1370:
+	Norm constant = 9267.375
+
+1372:
+	Norm constant = 9779.5
+
+1373:
+	Norm constant = 200.0
+
+1374:
+	Norm constant = 565.6875
+
+1376:
+	Norm constant = 6986.5
+
+1380:
+	Norm constant = 247.5625
+
+1383:
+	Norm constant = 964.75
+
+1384:
+	Norm constant = 16330.9375
+
+1386:
+	Norm constant = 249.875
+
+1387:
+	Norm constant = 4534.25
+
+1389:
+	Norm constant = 936.125
+
+1392:
+	Norm constant = 21.375
+
+1394:
+	Norm constant = 1611.0625
+
+1395:
+	Norm constant = 26363.375
+
+1397:
+	Norm constant = 29162.4375
+
+1400:
+	Norm constant = 4576.9375
+
+1408:
+	Norm constant = 4733.625
+
+1409:
+	Norm constant = 422.625
+
+1412:
+	Norm constant = 1666.8125
+
+1418:
+	Norm constant = 3652.5625
+
+1419:
+	Norm constant = 9553.0625
+
+1422:
+	Norm constant = 1160.125
+
+1423:
+	Norm constant = 6632.0625
+
+1425:
+	Norm constant = 11596.375
+
+1428:
+	Norm constant = 40.125
+
+1433:
+	Norm constant = 658.625
+
+1435:
+	Norm constant = 453.875
+
+1436:
+	Norm constant = 20641.125
+
+1437:
+	Norm constant = 8543.875
+
+1438:
+	Norm constant = 493.4375
+
+1440:
+	Norm constant = 7023.875
+
+1441:
+	Norm constant = 289.8125
+
+1445:
+	Norm constant = 4925.1875
+
+1446:
+	Norm constant = 21445.125
+
+1449:
+	Norm constant = 1084.625
+
+1451:
+	Norm constant = 21953.6875
+
+1453:
+	Norm constant = 2287.75
+
+1456:
+	Norm constant = 5991.75
+
+1460:
+	Norm constant = 2817.875
+
+1461:
+	Norm constant = 61525.0625
+
+1466:
+	Norm constant = 7552.625
+
+1478:
+	Norm constant = 111.0
+
+1482:
+	Norm constant = 1127.375
+
+1484:
+	Norm constant = 298.5
+
+1485:
+	Norm constant = 1195.5
+
+1486:
+	Norm constant = 12614.6875
+
+1488:
+	Norm constant = 276.4375
+
+1491:
+	Norm constant = 6.625
+
+1494:
+	Norm constant = 79420.5625
+
+1495:
+	Norm constant = 18303.6875
+
+1500:
+	Norm constant = 745.25
+
+1508:
+	Norm constant = 426.75
+
+1509:
+	Norm constant = 659.375
+
+1514:
+	Norm constant = 4688.4375
+
+1520:
+	Norm constant = 33808.0
+
+1523:
+	Norm constant = 1444.3125
+
+1525:
+	Norm constant = 21141.9375
+
+1526:
+	Norm constant = 2209.8125
+
+1527:
+	Norm constant = 4669.0625
+
+1529:
+	Norm constant = 849.3125
+
+1530:
+	Norm constant = 42832.8125
+
+1536:
+	Norm constant = 106.0
+
+1537:
+	Norm constant = 72147.625
+
+1540:
+	Norm constant = 4067.8125
+
+1542:
+	Norm constant = 3680.375
+
+1543:
+	Norm constant = 49.625
+
+1544:
+	Norm constant = 2321.5625
+
+1546:
+	Norm constant = 2616.75
+
+1548:
+	Norm constant = 773.5625
+
+1549:
+	Norm constant = 364.625
+
+1550:
+	Norm constant = 2620.25
+
+1552:
+	Norm constant = 91.3125
+
+1553:
+	Norm constant = 72.5
+
+1556:
+	Norm constant = 4456.1875
+
+1557:
+	Norm constant = 9665.4375
+
+1558:
+	Norm constant = 1784.125
+
+1559:
+	Norm constant = 26.75
+
+1560:
+	Norm constant = 13689.8125
+
+1564:
+	Norm constant = 48.625
+
+1565:
+	Norm constant = 52.6875
+
+1566:
+	Norm constant = 19378.0625
+
+1567:
+	Norm constant = 649.5625
+
+1568:
+	Norm constant = 2617.5625
+
+1570:
+	Norm constant = 5923.0625
+
+1571:
+	Norm constant = 803.75
+
+1573:
+	Norm constant = 6878.5
+
+1575:
+	Norm constant = 30581.0
+
+1576:
+	Norm constant = 35918.5625
+
+1577:
+	Norm constant = 2723.1875
+
+1578:
+	Norm constant = 109.0
+
+1579:
+	Norm constant = 620.25
+
+1580:
+	Norm constant = 125.8125
+
+1581:
+	Norm constant = 269.8125
+
+1583:
+	Norm constant = 11405.375
+
+1585:
+	Norm constant = 156.25
+
+1586:
+	Norm constant = 69.5625
+
+1587:
+	Norm constant = 1063.1875
+
+1588:
+	Norm constant = 81.5
+
+1589:
+	Norm constant = 277.3125
+
+1592:
+	Norm constant = 7721.5625
+
+1593:
+	Norm constant = 634.125
+
+1595:
+	Norm constant = 1050.25
+
+1596:
+	Norm constant = 709.0
+
+1599:
+	Norm constant = 1897.375
+
+1600:
+	Norm constant = 5068.3125
+
+1601:
+	Norm constant = 104.125
+
+1605:
+	Norm constant = 51.6875
+
+1606:
+	Norm constant = 1993.375
+
+1613:
+	Norm constant = 7755.875
+
+1614:
+	Norm constant = 225.75
+
+1615:
+	Norm constant = 260.1875
+
+1620:
+	Norm constant = 2280.5625
+
+1623:
+	Norm constant = 89624.375
+
+1624:
+	Norm constant = 123619.375
+
+1625:
+	Norm constant = 24794.9375
+
+1627:
+	Norm constant = 71316.1875
+
+1633:
+	Norm constant = 1034.9375
+
+1634:
+	Norm constant = 1004268036.375
+
+1635:
+	Norm constant = 7600.9375
+
+1637:
+	Norm constant = 78.125
+
+1638:
+	Norm constant = 20.375
+
+1640:
+	Norm constant = 72587.3125
+
+1642:
+	Norm constant = 1217.125
+
+1644:
+	Norm constant = 15317.9375
+
+1645:
+	Norm constant = 21136.8125
+
+1647:
+	Norm constant = 132.875
+
+1649:
+	Norm constant = 10990.4375
+
+1650:
+	Norm constant = 693.0
+
+1653:
+	Norm constant = 7884.6875
+
+1654:
+	Norm constant = 36.6875
+
+1655:
+	Norm constant = 485.75
+
+1656:
+	Norm constant = 176.625
+
+1657:
+	Norm constant = 1940.0625
+
+1659:
+	Norm constant = 530.1875
+
+1660:
+	Norm constant = 758.0
+
+1662:
+	Norm constant = 406.4375
+
+1664:
+	Norm constant = 511.25
+
+1669:
+	Norm constant = 52.5
+
+1676:
+	Norm constant = 2184.1875
+
+1677:
+	Norm constant = 3537.9375
+
+1679:
+	Norm constant = 5727.4375
+
+1680:
+	Norm constant = 972.375
+
+1684:
+	Norm constant = 122.8125
+
+1685:
+	Norm constant = 1192.375
+
+1687:
+	Norm constant = 1759.8125
+
+1688:
+	Norm constant = 48.625
+
+1690:
+	Norm constant = 369.8125
+
+1695:
+	Norm constant = 12013.0
+
+1697:
+	Norm constant = 1704.875
+
+1698:
+	Norm constant = 589.4375
+
+1701:
+	Norm constant = 41579.375
+
+1702:
+	Norm constant = 209.875
+
+1714:
+	Norm constant = 33.6875
+
+1715:
+	Norm constant = 51459.875
+
+1716:
+	Norm constant = 471.6875
+
+1717:
+	Norm constant = 1083.875
+
+1718:
+	Norm constant = 291.5
+
+1719:
+	Norm constant = 28656.6875
+
+1722:
+	Norm constant = 2655.875
+
+1723:
+	Norm constant = 127.0625
+
+1724:
+	Norm constant = 1044.875
+
+1726:
+	Norm constant = 2568.1875
+
+1727:
+	Norm constant = 5648.875
+
+1728:
+	Norm constant = 488.8125
+
+1730:
+	Norm constant = 357.375
+
+1732:
+	Norm constant = 671.25
+
+1734:
+	Norm constant = 809.5
+
+1735:
+	Norm constant = 743.3125
+
+1737:
+	Norm constant = 847.8125
+
+1738:
+	Norm constant = 149.25
+
+1740:
+	Norm constant = 15.5625
+
+1746:
+	Norm constant = 232.25
+
+1748:
+	Norm constant = 399.9375
+
+1749:
+	Norm constant = 506.6875
+
+1750:
+	Norm constant = 8865.4375
+
+1751:
+	Norm constant = 102.8125
+
+1752:
+	Norm constant = 1677.25
+
+1755:
+	Norm constant = 17498.8125
+
+1756:
+	Norm constant = 5865.25
+
+1758:
+	Norm constant = 595.5
+
+1762:
+	Norm constant = 2712.75
+
+1763:
+	Norm constant = 20.5625
+
+1764:
+	Norm constant = 113.9375
+
+1765:
+	Norm constant = 4.625
+
+1767:
+	Norm constant = 1592.5625
+
+1770:
+	Norm constant = 26764.75
+
+1773:
+	Norm constant = 5543.75
+
+1774:
+	Norm constant = 1974.25
+
+1776:
+	Norm constant = 3769.9375
+
+1778:
+	Norm constant = 1696.1875
+
+1784:
+	Norm constant = 56082.875
+
+1786:
+	Norm constant = 2657.8125
+
+1789:
+	Norm constant = 732.9375
+
+1790:
+	Norm constant = 2596.375
+
+1791:
+	Norm constant = 14746.75
+
+1797:
+	Norm constant = 1096.9375
+
+1800:
+	Norm constant = 15212.0625
+
+1802:
+	Norm constant = 73.5625
+
+1805:
+	Norm constant = 13660.375
+
+1806:
+	Norm constant = 49326.1875
+
+1810:
+	Norm constant = 136.8125
+
+1812:
+	Norm constant = 22292.5625
+
+1814:
+	Norm constant = 52534.0625
+
+1822:
+	Norm constant = 23482.3125
+
+1825:
+	Norm constant = 1107.0
+
+1828:
+	Norm constant = 14477.125
+
+1832:
+	Norm constant = 247.0
+
+1834:
+	Norm constant = 848.75
+
+1835:
+	Norm constant = 363.875
+
+1837:
+	Norm constant = 1375.0
+
+1839:
+	Norm constant = 271.0
+
+1840:
+	Norm constant = 313.625
+
+1841:
+	Norm constant = 13975.0
+
+1842:
+	Norm constant = 12245.125
+
+1844:
+	Norm constant = 17918.6875
+
+1845:
+	Norm constant = 144628.25
+
+1847:
+	Norm constant = 560.6875
+
+1851:
+	Norm constant = 365.5625
+
+1853:
+	Norm constant = 1440.5
+
+1854:
+	Norm constant = 21860.25
+
+1857:
+	Norm constant = 9869.0625
+
+1859:
+	Norm constant = 81857.6875
+
+1864:
+	Norm constant = 4963.3125
+
+1866:
+	Norm constant = 70.6875
+
+1869:
+	Norm constant = 1197.625
+
+1870:
+	Norm constant = 4.375
+
+1871:
+	Norm constant = 3540.0
+
+1872:
+	Norm constant = 7533.0625
+
+1873:
+	Norm constant = 142.0
+
+1874:
+	Norm constant = 3434.0625
+
+1875:
+	Norm constant = 337.375
+
+1878:
+	Norm constant = 541.125
+
+1880:
+	Norm constant = 116.625
+
+1881:
+	Norm constant = 28499.875
+
+1884:
+	Norm constant = 8982.6875
+
+1887:
+	Norm constant = 8.125
+
+1890:
+	Norm constant = 12593.25
+
+1893:
+	Norm constant = 2793.625
+
+1894:
+	Norm constant = 45.625
+
+1896:
+	Norm constant = 2168.4375
+
+1897:
+	Norm constant = 12226.125
+
+1902:
+	Norm constant = 21481.625
+
+1905:
+	Norm constant = 1517.875
+
+1908:
+	Norm constant = 99.375
+
+1909:
+	Norm constant = 1735.6875
+
+1910:
+	Norm constant = 5435.8125
+
+1911:
+	Norm constant = 769.75
+
+1912:
+	Norm constant = 300.4375
+
+1914:
+	Norm constant = 32024.8125
+
+1915:
+	Norm constant = 1988.0
+
+1916:
+	Norm constant = 305.625
+
+1921:
+	Norm constant = 128475.1875
+
+1923:
+	Norm constant = 1715.75
+
+1924:
+	Norm constant = 242.25
+
+1925:
+	Norm constant = 1571.25
+
+1926:
+	Norm constant = 2061.625
+
+1927:
+	Norm constant = 614.4375
+
+1930:
+	Norm constant = 60524.625
+
+1931:
+	Norm constant = 4.1875
+
+1933:
+	Norm constant = 1379.25
+
+1934:
+	Norm constant = 2079.9375
+
+1937:
+	Norm constant = 3076.125
+
+1938:
+	Norm constant = 51439.0
+
+1939:
+	Norm constant = 755.6875
+
+1940:
+	Norm constant = 91.375
+
+1941:
+	Norm constant = 522.1875
+
+1942:
+	Norm constant = 30121.75
+
+1943:
+	Norm constant = 11918.5
+
+1944:
+	Norm constant = 5881.4375
+
+1946:
+	Norm constant = 790.1875
+
+1947:
+	Norm constant = 4.6875
+
+1948:
+	Norm constant = 2508.0625
+
+1949:
+	Norm constant = 297.125
+
+1950:
+	Norm constant = 198965.125
+
+1955:
+	Norm constant = 3508.25
+
+1957:
+	Norm constant = 3250.625
+
+1960:
+	Norm constant = 40.25
+
+1962:
+	Norm constant = 2851.6875
+
+1963:
+	Norm constant = 2424.25
+
+1965:
+	Norm constant = 27665.9375
+
+1966:
+	Norm constant = 2777.0625
+
+1967:
+	Norm constant = 3533.1875
+
+1968:
+	Norm constant = 3642.6875
+
+1969:
+	Norm constant = 14295.5625
+
+1970:
+	Norm constant = 36521.8125
+
+1971:
+	Norm constant = 16294.6875
+
+1973:
+	Norm constant = 131498.25
+
+1975:
+	Norm constant = 6429.5
+
+1979:
+	Norm constant = 20591.9375
+
+1980:
+	Norm constant = 30694.0625
+
+1986:
+	Norm constant = 132.0625
+
+1988:
+	Norm constant = 4773.125
+
+1997:
+	Norm constant = 27163.125
+
+1998:
+	Norm constant = 81060.6875
+
+2003:
+	Norm constant = 1832.9375
+
+2004:
+	Norm constant = 4.4375
+
+2006:
+	Norm constant = 49406.625
+
+2007:
+	Norm constant = 30243.625
+
+2009:
+	Norm constant = 8994.875
+
+2011:
+	Norm constant = 80494.5
+
+2014:
+	Norm constant = 180.0625
+
+2015:
+	Norm constant = 3855.6875
+
+2017:
+	Norm constant = 5590.0
+
+2018:
+	Norm constant = 2468.1875
+
+2020:
+	Norm constant = 1805.9375
+
+2021:
+	Norm constant = 343.875
+
+2023:
+	Norm constant = 17878.3125
+
+2024:
+	Norm constant = 643.6875
+
+2025:
+	Norm constant = 223.8125
+
+2027:
+	Norm constant = 537.25
+
+2029:
+	Norm constant = 12660.4375
+
+2030:
+	Norm constant = 52545.6875
+
+2032:
+	Norm constant = 2470.875
+
+2037:
+	Norm constant = 7128.625
+
+2039:
+	Norm constant = 2085.625
+
+2041:
+	Norm constant = 4460.8125
+
+2042:
+	Norm constant = 13260.4375
+
+2047:
+	Norm constant = 8555.875
+
+2049:
+	Norm constant = 2212.5
+
+2052:
+	Norm constant = 5635.5
+
+2053:
+	Norm constant = 1505.375
+
+2061:
+	Norm constant = 1870.5
+
+2062:
+	Norm constant = 2856.9375
+
+2063:
+	Norm constant = 273.5
+
+2064:
+	Norm constant = 4963.625
+
+2065:
+	Norm constant = 30084.1875
+
+2067:
+	Norm constant = 26788.6875
+
+2070:
+	Norm constant = 22882.625
+
+2075:
+	Norm constant = 3391.75
+
+2076:
+	Norm constant = 8780.875
+
+2077:
+	Norm constant = 1360.875
+
+2078:
+	Norm constant = 14674.25
+
+2080:
+	Norm constant = 1702.0
+
+2082:
+	Norm constant = 2463.5625
+
+2083:
+	Norm constant = 721.1875
+
+2084:
+	Norm constant = 10198.125
+
+2085:
+	Norm constant = 111370.0625
+
+2086:
+	Norm constant = 25.75
+
+2088:
+	Norm constant = 14988.5
+
+2089:
+	Norm constant = 6375.4375
+
+2093:
+	Norm constant = 83.75
+
+2099:
+	Norm constant = 500.75
+
+2100:
+	Norm constant = 4598.125
+
+2101:
+	Norm constant = 4887.25
+
+2102:
+	Norm constant = 6772.4375
+
+2103:
+	Norm constant = 18253.1875
+
+2104:
+	Norm constant = 1128.5625
+
+2106:
+	Norm constant = 1109.5
+
+2108:
+	Norm constant = 1493.125
+
+2110:
+	Norm constant = 1179.3125
+
+2112:
+	Norm constant = 3044.875
+
+2113:
+	Norm constant = 2048.5625
+
+2114:
+	Norm constant = 3966.0
+
+2115:
+	Norm constant = 13856.375
+
+2116:
+	Norm constant = 70315.5625
+
+2117:
+	Norm constant = 6251.5
+
+2118:
+	Norm constant = 611.5625
+
+2120:
+	Norm constant = 56.25
+
+2122:
+	Norm constant = 35163.8125
+
+2125:
+	Norm constant = 288.625
+
+2126:
+	Norm constant = 8738.1875
+
+2129:
+	Norm constant = 1126.6875
+
+2130:
+	Norm constant = 46529.0
+
+2134:
+	Norm constant = 22169.5625
+
+2136:
+	Norm constant = 3343.3125
+
+2137:
+	Norm constant = 4580.625
+
+2140:
+	Norm constant = 102306.9375
+
+2141:
+	Norm constant = 30866.875
+
+2142:
+	Norm constant = 8.375
+
+2144:
+	Norm constant = 61453.5
+
+2147:
+	Norm constant = 5498.8125
+
+2148:
+	Norm constant = 37651.1875
+
+2151:
+	Norm constant = 606.9375
+
+2152:
+	Norm constant = 13097.125
+
+2154:
+	Norm constant = 68736.0
+
+2161:
+	Norm constant = 293.3125
+
+2162:
+	Norm constant = 16059.75
+
+2163:
+	Norm constant = 1152.125
+
+2167:
+	Norm constant = 5505.9375
+
+2171:
+	Norm constant = 1045.6875
+
+2174:
+	Norm constant = 29022.0625
+
+2175:
+	Norm constant = 141638.875
+
+2176:
+	Norm constant = 60242.3125
+
+2178:
+	Norm constant = 37313.9375
+
+2179:
+	Norm constant = 1298.0
+
+2180:
+	Norm constant = 389.875
+
+2185:
+	Norm constant = 55551.375
+
+2186:
+	Norm constant = 1238.875
+
+2187:
+	Norm constant = 14327.75
+
+2193:
+	Norm constant = 780.4375
+
+2197:
+	Norm constant = 14391.75
+
+2198:
+	Norm constant = 395.1875
+
+2201:
+	Norm constant = 1687.1875
+
+2202:
+	Norm constant = 8488.875
+
+2204:
+	Norm constant = 9384.75
+
+2207:
+	Norm constant = 1377.5
+
+2208:
+	Norm constant = 2557.8125
+
+2210:
+	Norm constant = 7647.9375
+
+2215:
+	Norm constant = 18300.1875
+
+2216:
+	Norm constant = 28333.625
+
+2217:
+	Norm constant = 6127.3125
+
+2218:
+	Norm constant = 2563.9375
+
+2219:
+	Norm constant = 24354.25
+
+2221:
+	Norm constant = 4490.375
+
+2222:
+	Norm constant = 8589.0625
+
+2226:
+	Norm constant = 657.0
+
+2230:
+	Norm constant = 3199.125
+
+2233:
+	Norm constant = 4275.75
+
+2234:
+	Norm constant = 4303.3125
+
+2235:
+	Norm constant = 98.0
+
+2236:
+	Norm constant = 4921.5625
+
+2237:
+	Norm constant = 1623.9375
+
+2238:
+	Norm constant = 1179.3125
+
+2241:
+	Norm constant = 25754.3125
+
+2244:
+	Norm constant = 1101.1875
+
+2245:
+	Norm constant = 1119.4375
+
+2246:
+	Norm constant = 2212.125
+
+2250:
+	Norm constant = 1601.75
+
+2251:
+	Norm constant = 4277.125
+
+2257:
+	Norm constant = 73584.3125
+
+2268:
+	Norm constant = 2886.9375
+
+2273:
+	Norm constant = 35301.3125
+
+2274:
+	Norm constant = 9404.6875
+
+2275:
+	Norm constant = 3000.125
+
+2282:
+	Norm constant = 768.8125
+
+2284:
+	Norm constant = 1384.0625
+
+2286:
+	Norm constant = 11765.9375
+
+2287:
+	Norm constant = 2183.6875
+
+2288:
+	Norm constant = 1484.1875
+
+2289:
+	Norm constant = 3354.375
+
+2296:
+	Norm constant = 16536.3125
+
+2299:
+	Norm constant = 132.6875
+
+2303:
+	Norm constant = 50555.875
+
+2304:
+	Norm constant = 630.4375
+
+2308:
+	Norm constant = 1293.1875
+
+2310:
+	Norm constant = 14375.3125
+
+2313:
+	Norm constant = 432.1875
+
+2314:
+	Norm constant = 3655.0625
+
+2315:
+	Norm constant = 9.125
+
+2316:
+	Norm constant = 531.3125
+
+2321:
+	Norm constant = 36942.3125
+
+2322:
+	Norm constant = 154.0
+
+2323:
+	Norm constant = 1200.125
+
+2328:
+	Norm constant = 6132.5
+
+2330:
+	Norm constant = 217.3125
+
+2333:
+	Norm constant = 1061.9375
+
+2335:
+	Norm constant = 594.25
+
+2338:
+	Norm constant = 16752.0625
+
+2339:
+	Norm constant = 324.6875
+
+2340:
+	Norm constant = 239.125
+
+2341:
+	Norm constant = 3216.4375
+
+2343:
+	Norm constant = 1962.75
+
+2345:
+	Norm constant = 4522.0625
+
+2346:
+	Norm constant = 374.1875
+
+2348:
+	Norm constant = 14301.3125
+
+2349:
+	Norm constant = 8387.5
+
+2357:
+	Norm constant = 51096.0625
+
+2358:
+	Norm constant = 22892.9375
+
+2360:
+	Norm constant = 189.9375
+
+2362:
+	Norm constant = 27781.625
+
+2363:
+	Norm constant = 833.125
+
+2369:
+	Norm constant = 6593.125
+
+2371:
+	Norm constant = 1715.625
+
+2372:
+	Norm constant = 38.625
+
+2376:
+	Norm constant = 2282.5625
+
+2377:
+	Norm constant = 40557.1875
+
+2380:
+	Norm constant = 2024.25
+
+2381:
+	Norm constant = 38.25
+
+2382:
+	Norm constant = 79199.9375
+
+2383:
+	Norm constant = 962.375
+
+2384:
+	Norm constant = 1862.625
+
+2386:
+	Norm constant = 25438.625
+
+2388:
+	Norm constant = 25588.0625
+
+2389:
+	Norm constant = 257.75
+
+2391:
+	Norm constant = 575.5625
+
+2392:
+	Norm constant = 4359.1875
+
+2393:
+	Norm constant = 36726.625
+
+2396:
+	Norm constant = 7240.9375
+
+2397:
+	Norm constant = 6921.0
+
+2398:
+	Norm constant = 665.75
+
+2400:
+	Norm constant = 23647.6875
+
+2402:
+	Norm constant = 15645.625
+
+2403:
+	Norm constant = 28591.4375
+
+2405:
+	Norm constant = 1884.5625
+
+2406:
+	Norm constant = 1636.125
+
+2408:
+	Norm constant = 4167.625
+
+2411:
+	Norm constant = 16817.625
+
+2414:
+	Norm constant = 928.5625
+
+2416:
+	Norm constant = 3096.9375
+
+2417:
+	Norm constant = 7031.25
+
+2422:
+	Norm constant = 6570.8125
+
+2425:
+	Norm constant = 44217.75
+
+2427:
+	Norm constant = 949.5
+
+2428:
+	Norm constant = 16522.8125
+
+2431:
+	Norm constant = 2826.125
+
+2433:
+	Norm constant = 1922.9375
+
+2439:
+	Norm constant = 301.4375
+
+2440:
+	Norm constant = 3920.3125
+
+2441:
+	Norm constant = 350.5
+
+2443:
+	Norm constant = 2447.4375
+
+2444:
+	Norm constant = 5489.9375
+
+2447:
+	Norm constant = 11707.5625
+
+2448:
+	Norm constant = 73.375
+
+2457:
+	Norm constant = 18862.625
+
+2460:
+	Norm constant = 27387.1875
+
+2466:
+	Norm constant = 10978.4375
+
+2467:
+	Norm constant = 16363.8125
+
+2471:
+	Norm constant = 95.6875
+
+2472:
+	Norm constant = 3186.5
+
+2473:
+	Norm constant = 1381.1875
+
+2474:
+	Norm constant = 754.1875
+
+2475:
+	Norm constant = 306.6875
+
+2476:
+	Norm constant = 243.6875
+
+2477:
+	Norm constant = 337.5
+
+2482:
+	Norm constant = 3411.5
+
+2487:
+	Norm constant = 55.5625
+
+2490:
+	Norm constant = 155.125
+
+2493:
+	Norm constant = 16819.125
+
+2494:
+	Norm constant = 18001.6875
+
+2499:
+	Norm constant = 6312.75
+
+2500:
+	Norm constant = 193.3125
+
+2502:
+	Norm constant = 70.5625
+
+2503:
+	Norm constant = 7810.5
+
+2504:
+	Norm constant = 5460.0
+
+2506:
+	Norm constant = 141.6875
+
+2508:
+	Norm constant = 101980.875
+
+2510:
+	Norm constant = 3628.0
+
+2511:
+	Norm constant = 491.0
+
+2512:
+	Norm constant = 6526.375
+
+2514:
+	Norm constant = 1180.125
+
+2519:
+	Norm constant = 556.4375
+
+2524:
+	Norm constant = 15565.75
+
+2526:
+	Norm constant = 133.1875
+
+2528:
+	Norm constant = 607.125
+
+2529:
+	Norm constant = 25.125
+
+2536:
+	Norm constant = 91.125
+
+2544:
+	Norm constant = 1381.0625
+
+2546:
+	Norm constant = 1597.3125
+
+2547:
+	Norm constant = 62767.0625
+
+2551:
+	Norm constant = 334.0
+
+2552:
+	Norm constant = 109.4375
+
+2553:
+	Norm constant = 335.0
+
+2558:
+	Norm constant = 37.6875
+
+2559:
+	Norm constant = 342.0
+
+2560:
+	Norm constant = 7264.9375
+
+2563:
+	Norm constant = 9358.25
+
+2573:
+	Norm constant = 939.8125
+
+2575:
+	Norm constant = 17240.5625
+
+2577:
+	Norm constant = 563.1875
+
+2581:
+	Norm constant = 654.0
+
+2583:
+	Norm constant = 1249.1875
+
+2593:
+	Norm constant = 4815.8125
+
+2594:
+	Norm constant = 43237.3125
+
+2597:
+	Norm constant = 4735.25
+
+2598:
+	Norm constant = 2564.3125
+
+2602:
+	Norm constant = 92.75
+
+2604:
+	Norm constant = 5.6875
+
+2605:
+	Norm constant = 2.875
+
+2606:
+	Norm constant = 177.75
+
+2607:
+	Norm constant = 808.25
+
+2608:
+	Norm constant = 3537.875
+
+2610:
+	Norm constant = 1380.9375
+
+2616:
+	Norm constant = 573.5625
+
+2619:
+	Norm constant = 122.9375
+
+2620:
+	Norm constant = 80.375
+
+2621:
+	Norm constant = 202.3125
+
+2622:
+	Norm constant = 464.125
+
+2623:
+	Norm constant = 128.875
+
+2624:
+	Norm constant = 3967.3125
+
+2627:
+	Norm constant = 25625.8125
+
+2628:
+	Norm constant = 1551.8125
+
+2629:
+	Norm constant = 726.125
+
+2630:
+	Norm constant = 41.5625
+
+2632:
+	Norm constant = 2031.25
+
+2634:
+	Norm constant = 353.5
+
+2635:
+	Norm constant = 1970.3125
+
+2637:
+	Norm constant = 12656.1875
+
+2639:
+	Norm constant = 2124.5
+
+2640:
+	Norm constant = 23199.0625
+
+2641:
+	Norm constant = 354.75
+
+2642:
+	Norm constant = 36757.9375
+
+2645:
+	Norm constant = 2295.875
+
+2646:
+	Norm constant = 1381.375
+
+2654:
+	Norm constant = 100.6875
+
+2661:
+	Norm constant = 141.1875
+
+2662:
+	Norm constant = 857.625
+
+2665:
+	Norm constant = 357.0
+
+2667:
+	Norm constant = 376.375
+
+2668:
+	Norm constant = 3246.625
+
+2670:
+	Norm constant = 2189.25
+
+2671:
+	Norm constant = 2195.5
+
+2673:
+	Norm constant = 5703.0
+
+2674:
+	Norm constant = 540.1875
+
+2676:
+	Norm constant = 16220.9375
+
+2678:
+	Norm constant = 10700.8125
+
+2681:
+	Norm constant = 1631.0
+
+2685:
+	Norm constant = 366.875
+
+2686:
+	Norm constant = 284.5625
+
+2687:
+	Norm constant = 220.4375
+
+2689:
+	Norm constant = 33.4375
+
+2690:
+	Norm constant = 2.5
+
+2691:
+	Norm constant = 144.875
+
+2692:
+	Norm constant = 292.0
+
+2695:
+	Norm constant = 3461.5
+
+2696:
+	Norm constant = 145.5
+
+2699:
+	Norm constant = 47.0
+
+2700:
+	Norm constant = 79.6875
+
+2701:
+	Norm constant = 25011.3125
+
+2703:
+	Norm constant = 29665.5
+
+2704:
+	Norm constant = 46197.125
+
+2705:
+	Norm constant = 6428.9375
+
+2709:
+	Norm constant = 9785.25
+
+2712:
+	Norm constant = 2841.0625
+
+2714:
+	Norm constant = 1228.8125
+
+2715:
+	Norm constant = 5174.1875
+
+2716:
+	Norm constant = 396.625
+
+2717:
+	Norm constant = 1897.3125
+
+2719:
+	Norm constant = 41.125
+
+2720:
+	Norm constant = 1556.1875
+
+2722:
+	Norm constant = 906.1875
+
+2723:
+	Norm constant = 8915.9375
+
+2724:
+	Norm constant = 3233.3125
+
+2726:
+	Norm constant = 585.6875
+
+2732:
+	Norm constant = 134.5
+
+2736:
+	Norm constant = 221741.9375
+
+2739:
+	Norm constant = 62.5
+
+2740:
+	Norm constant = 371.6875
+
+2741:
+	Norm constant = 500.125
+
+2742:
+	Norm constant = 1.9375
+
+2745:
+	Norm constant = 5502.1875
+
+2747:
+	Norm constant = 3375.125
+
+2752:
+	Norm constant = 9151.625
+
+2753:
+	Norm constant = 1668.375
+
+2754:
+	Norm constant = 100.875
+
+2756:
+	Norm constant = 2348.8125
+
+2758:
+	Norm constant = 2928.5
+
+2761:
+	Norm constant = 6259.375
+
+2762:
+	Norm constant = 173.0
+
+2763:
+	Norm constant = 2225.5625
+
+2764:
+	Norm constant = 125.1875
+
+2766:
+	Norm constant = 1466.8125
+
+2767:
+	Norm constant = 5405.4375
+
+2769:
+	Norm constant = 121.375
+
+2770:
+	Norm constant = 227.625
+
+2778:
+	Norm constant = 30157.125
+
+2779:
+	Norm constant = 14736.0625
+
+2780:
+	Norm constant = 1496.4375
+
+2781:
+	Norm constant = 9358.1875
+
+2782:
+	Norm constant = 9242.5625
+
+2783:
+	Norm constant = 2078.0
+
+2784:
+	Norm constant = 12620.8125
+
+2785:
+	Norm constant = 182.125
+
+2786:
+	Norm constant = 8785.125
+
+2787:
+	Norm constant = 20656.1875
+
+2790:
+	Norm constant = 676.125
+
+2792:
+	Norm constant = 21022.5625
+
+2795:
+	Norm constant = 1434.4375
+
+2799:
+	Norm constant = 654.5
+
+2802:
+	Norm constant = 627.1875
+
+2807:
+	Norm constant = 7107.5
+
+2810:
+	Norm constant = 124.75
+
+2812:
+	Norm constant = 1358.8125
+
+2813:
+	Norm constant = 1222.1875
+
+2815:
+	Norm constant = 2110.8125
+
+2819:
+	Norm constant = 8041.875
+
+2820:
+	Norm constant = 205.4375
+
+2822:
+	Norm constant = 28.875
+
+2823:
+	Norm constant = 546.0625
+
+2824:
+	Norm constant = 480.9375
+
+2830:
+	Norm constant = 253.8125
+
+2834:
+	Norm constant = 19854.3125
+
+2835:
+	Norm constant = 2337.8125
+
+2836:
+	Norm constant = 1847.625
+
+2838:
+	Norm constant = 1881.5625
+
+2839:
+	Norm constant = 29499.75
+
+2840:
+	Norm constant = 736.0625
+
+2844:
+	Norm constant = 5235.9375
+
+2847:
+	Norm constant = 28393.1875
+
+2851:
+	Norm constant = 2516.6875
+
+2853:
+	Norm constant = 30.75
+
+2856:
+	Norm constant = 849.0
+
+2858:
+	Norm constant = 1357.5
+
+2861:
+	Norm constant = 23606.1875
+
+2862:
+	Norm constant = 350.625
+
+2864:
+	Norm constant = 59675.6875
+
+2865:
+	Norm constant = 239.1875
+
+2866:
+	Norm constant = 2219.3125
+
+2868:
+	Norm constant = 148.8125
+
+2869:
+	Norm constant = 2970.0
+
+2870:
+	Norm constant = 9614.625
+
+2875:
+	Norm constant = 3744.25
+
+2877:
+	Norm constant = 9383.75
+
+2881:
+	Norm constant = 3245.5625
+
+2883:
+	Norm constant = 261.375
+
+2885:
+	Norm constant = 1237.375
+
+2889:
+	Norm constant = 380.1875
+
+2890:
+	Norm constant = 16579.75
+
+2893:
+	Norm constant = 3699.0
+
+2899:
+	Norm constant = 21.0625
+
+2900:
+	Norm constant = 110.5625
+
+2905:
+	Norm constant = 15052.3125
+
+2906:
+	Norm constant = 556.9375
+
+2907:
+	Norm constant = 128.0
+
+2908:
+	Norm constant = 95.25
+
+2909:
+	Norm constant = 2579.9375
+
+2911:
+	Norm constant = 1165.25
+
+2917:
+	Norm constant = 1826.25
+
+2919:
+	Norm constant = 2874.4375
+
+2923:
+	Norm constant = 3502.1875
+
+2925:
+	Norm constant = 1087.875
+
+2926:
+	Norm constant = 757.5625
+
+2927:
+	Norm constant = 23067.125
+
+2928:
+	Norm constant = 1604.9375
+
+2934:
+	Norm constant = 14634.4375
+
+2936:
+	Norm constant = 1164.5625
+
+2938:
+	Norm constant = 7.6875
+
+2939:
+	Norm constant = 168.0625
+
+2940:
+	Norm constant = 7674.25
+
+2941:
+	Norm constant = 43.5
+
+2942:
+	Norm constant = 10956.0625
+
+2943:
+	Norm constant = 650.0
+
+2944:
+	Norm constant = 37884.375
+
+2945:
+	Norm constant = 56.625
+
+2947:
+	Norm constant = 174.625
+
+2948:
+	Norm constant = 252.4375
+
+2950:
+	Norm constant = 3720.875
+
+2952:
+	Norm constant = 1666.6875
+
+2955:
+	Norm constant = 153.6875
+
+2956:
+	Norm constant = 162.25
+
+2957:
+	Norm constant = 177.625
+
+2959:
+	Norm constant = 112.8125
+
+2961:
+	Norm constant = 884.25
+
+2963:
+	Norm constant = 14176.6875
+
+2965:
+	Norm constant = 22874.375
+
+2972:
+	Norm constant = 6743.6875
+
+2974:
+	Norm constant = 6128.3125
+
+2975:
+	Norm constant = 1577.375
+
+2983:
+	Norm constant = 193487.0
+
+2986:
+	Norm constant = 508.875
+
+2987:
+	Norm constant = 10605.0625
+
+2988:
+	Norm constant = 1970.0
+
+2991:
+	Norm constant = 3.875
+
+2992:
+	Norm constant = 1358.8125
+
+2994:
+	Norm constant = 7458.9375
+
+2995:
+	Norm constant = 30487.75
+
+2999:
+	Norm constant = 2132.1875
+
+3003:
+	Norm constant = 2278.875
+
+3004:
+	Norm constant = 861.125
+
+3010:
+	Norm constant = 2428.125
+
+3012:
+	Norm constant = 50289.1875
+
+3013:
+	Norm constant = 444.3125
+
+3014:
+	Norm constant = 33.3125
+
+3017:
+	Norm constant = 92.3125
+
+3019:
+	Norm constant = 16444.5
+
+3020:
+	Norm constant = 75.9375
+
+3022:
+	Norm constant = 9883.6875
+
+3027:
+	Norm constant = 2557.3125
+
+3029:
+	Norm constant = 4253.5
+
+3032:
+	Norm constant = 4191.0625
+
+3034:
+	Norm constant = 13641.3125
+
+3035:
+	Norm constant = 1971.0
+
+3036:
+	Norm constant = 2544.5625
+
+3038:
+	Norm constant = 4761.125
+
+3040:
+	Norm constant = 109.75
+
+3043:
+	Norm constant = 1172.9375
+
+3044:
+	Norm constant = 193.375
+
+3045:
+	Norm constant = 128.75
+
+3046:
+	Norm constant = 244.4375
+
+3049:
+	Norm constant = 1924.25
+
+3052:
+	Norm constant = 24289.25
+
+3054:
+	Norm constant = 8217.5
+
+3055:
+	Norm constant = 14869.4375
+
+3058:
+	Norm constant = 3634.125
+
+3060:
+	Norm constant = 10055.3125
+
+3065:
+	Norm constant = 44.75
+
+3067:
+	Norm constant = 4741.875
+
+3068:
+	Norm constant = 1618.875
+
+3070:
+	Norm constant = 4333.5625
+
+3071:
+	Norm constant = 109.9375
+
+3072:
+	Norm constant = 4244.1875
+
+3074:
+	Norm constant = 46.8125
+
+3075:
+	Norm constant = 1266.0625
+
+3076:
+	Norm constant = 1544.9375
+
+3077:
+	Norm constant = 2739.8125
+
+3078:
+	Norm constant = 1433.5625
+
+3079:
+	Norm constant = 23518.875
+
+3080:
+	Norm constant = 27171.5
+
+3082:
+	Norm constant = 555.4375
+
+3083:
+	Norm constant = 27599.625
+
+3085:
+	Norm constant = 476.8125
+
+3087:
+	Norm constant = 142.0625
+
+3088:
+	Norm constant = 17.3125
+
+3089:
+	Norm constant = 45.3125
+
+3090:
+	Norm constant = 432.5
+
+3092:
+	Norm constant = 3826.4375
+
+3093:
+	Norm constant = 286.0
+
+3095:
+	Norm constant = 1546.25
+
+3104:
+	Norm constant = 1570.375
+
+3107:
+	Norm constant = 8330.0625
+
+3110:
+	Norm constant = 831.3125
+
+3111:
+	Norm constant = 4961.8125
+
+3112:
+	Norm constant = 257.6875
+
+3114:
+	Norm constant = 158.125
+
+3116:
+	Norm constant = 1174.625
+
+3117:
+	Norm constant = 12818.375
+
+3118:
+	Norm constant = 8479.625
+
+3120:
+	Norm constant = 528.5625
+
+3122:
+	Norm constant = 78.8125
+
+3123:
+	Norm constant = 176.9375
+
+3124:
+	Norm constant = 126.875
+
+3125:
+	Norm constant = 23.0625
+
+3129:
+	Norm constant = 406.0
+
+3130:
+	Norm constant = 321.8125
+
+3132:
+	Norm constant = 335.625
+
+3134:
+	Norm constant = 2240.0
+
+3135:
+	Norm constant = 668.0625
+
+3138:
+	Norm constant = 55185.5625
+
+3143:
+	Norm constant = 188.0625
+
+3144:
+	Norm constant = 7026.9375
+
+3146:
+	Norm constant = 3323.0
+
+3147:
+	Norm constant = 11315.8125
+
+3149:
+	Norm constant = 842.5
+
+3151:
+	Norm constant = 2790.0
+
+3152:
+	Norm constant = 2010.1875
+
+3155:
+	Norm constant = 15706.8125
+
+3160:
+	Norm constant = 348.625
+
+3162:
+	Norm constant = 19287.0625
+
+3165:
+	Norm constant = 16878.75
+
+3168:
+	Norm constant = 631.9375
+
+3170:
+	Norm constant = 5877.5625
+
+3172:
+	Norm constant = 394.8125
+
+3173:
+	Norm constant = 4764.375
+
+3175:
+	Norm constant = 178.8125
+
+3189:
+	Norm constant = 38.125
+
+3192:
+	Norm constant = 986.5
+
+3198:
+	Norm constant = 4186.75
+
+3201:
+	Norm constant = 15898.1875
+
+3203:
+	Norm constant = 35.8125
+
+3204:
+	Norm constant = 212.6875
+
+3205:
+	Norm constant = 304.875
+
+3209:
+	Norm constant = 744.125
+
+3211:
+	Norm constant = 8120.0
+
+3212:
+	Norm constant = 8176.4375
+
+3214:
+	Norm constant = 2083.625
+
+3217:
+	Norm constant = 6846.125
+
+3218:
+	Norm constant = 691.3125
+
+3221:
+	Norm constant = 1036.8125
+
+3222:
+	Norm constant = 846.6875
+
+3225:
+	Norm constant = 45328.0
+
+3226:
+	Norm constant = 41646.75
+
+3229:
+	Norm constant = 2316.3125
+
+3231:
+	Norm constant = 155.0
+
+3233:
+	Norm constant = 1472.3125
+
+3234:
+	Norm constant = 68.6875
+
+3236:
+	Norm constant = 2118.5
+
+3237:
+	Norm constant = 1585.5
+
+3240:
+	Norm constant = 108.6875
+
+3244:
+	Norm constant = 3454.125
+
+3246:
+	Norm constant = 7202.75
+
+3250:
+	Norm constant = 337.4375
+
+3251:
+	Norm constant = 79.625
+
+3252:
+	Norm constant = 1318.1875
+
+3253:
+	Norm constant = 720.25
+
+3255:
+	Norm constant = 7778.1875
+
+3259:
+	Norm constant = 1018.25
+
+3262:
+	Norm constant = 1774.25
+
+3263:
+	Norm constant = 5912.1875
+
+3266:
+	Norm constant = 484.5
+
+3273:
+	Norm constant = 3127.4375
+
+3275:
+	Norm constant = 1206.5625
+
+3277:
+	Norm constant = 14944.0625
+
+3292:
+	Norm constant = 10788.625
+
+3295:
+	Norm constant = 7497.5625
+
+3332:
+	Norm constant = 4411.6875
+
+3333:
+	Norm constant = 21698.8125
+
+3335:
+	Norm constant = 46467.9375
+
+3336:
+	Norm constant = 934.8125
+
+3338:
+	Norm constant = 126654.5
+
+3340:
+	Norm constant = 338.25
+
+3343:
+	Norm constant = 51258.0
+
+3352:
+	Norm constant = 53660.5
+
+3354:
+	Norm constant = 87708.5
+
+3355:
+	Norm constant = 26703.1875
+
+3356:
+	Norm constant = 72435.75
+
+3358:
+	Norm constant = 370.125
+
+3359:
+	Norm constant = 1820.8125
+
+3360:
+	Norm constant = 5.6875
+
+3363:
+	Norm constant = 32515.4375
+
+3364:
+	Norm constant = 2816.5625
+
+3365:
+	Norm constant = 1412.9375
+
+3370:
+	Norm constant = 5143.5
+
+3374:
+	Norm constant = 2822.5
+
+3375:
+	Norm constant = 909.75
+
+3376:
+	Norm constant = 14172.5
+
+3378:
+	Norm constant = 18323.75
+
+3382:
+	Norm constant = 55292.3125
+
+3383:
+	Norm constant = 115022.1875
+
+3385:
+	Norm constant = 70349.8125
+
+3386:
+	Norm constant = 15271.6875
+
+3390:
+	Norm constant = 50556.375
+
+3392:
+	Norm constant = 123533.0625
+
+3395:
+	Norm constant = 26983.5625
+
+3397:
+	Norm constant = 3809.4375
+
+3398:
+	Norm constant = 1384.5625
+
+3401:
+	Norm constant = 4539.4375
+
+3402:
+	Norm constant = 2062.0625
+
+3403:
+	Norm constant = 134.8125
+
+3406:
+	Norm constant = 626.5625
+
+3408:
+	Norm constant = 39190.125
+
+3409:
+	Norm constant = 15196.375
+
+3410:
+	Norm constant = 63658.9375
+
+3411:
+	Norm constant = 11158.625
+
+3412:
+	Norm constant = 71.625
+
+3415:
+	Norm constant = 47915.6875
+
+3416:
+	Norm constant = 45535.8125
+
+3417:
+	Norm constant = 77.1875
+
+3419:
+	Norm constant = 339.3125
+
+3422:
+	Norm constant = 1936.8125
+
+3427:
+	Norm constant = 7554.75
+
+3428:
+	Norm constant = 13.75
+
+3429:
+	Norm constant = 45.125
+
+3430:
+	Norm constant = 14530.75
+
+3435:
+	Norm constant = 48.0
+
+3436:
+	Norm constant = 12454.125
+
+3437:
+	Norm constant = 25.3125
+
+3438:
+	Norm constant = 91.125
+
+3439:
+	Norm constant = 174.8125
+
+3441:
+	Norm constant = 33.375
+
+3443:
+	Norm constant = 120.875
+
+3446:
+	Norm constant = 2594.5
+
+3447:
+	Norm constant = 12006.875
+
+3450:
+	Norm constant = 3146.5625
+
+3451:
+	Norm constant = 31644.1875
+
+3453:
+	Norm constant = 1382.0
+
+3454:
+	Norm constant = 160227.1875
+
+3455:
+	Norm constant = 22150.1875
+
+3456:
+	Norm constant = 147.8125
+
+3457:
+	Norm constant = 48976.75
+
+3458:
+	Norm constant = 63897.1875
+
+3459:
+	Norm constant = 15867.25
+
+3460:
+	Norm constant = 93461.5
+
+3462:
+	Norm constant = 54914.0625
+
+3463:
+	Norm constant = 136763.875
+
+3464:
+	Norm constant = 28028.375
+
+3466:
+	Norm constant = 34617.4375
+
+3469:
+	Norm constant = 11723.625
+
+3470:
+	Norm constant = 47734.9375
+
+3477:
+	Norm constant = 2033.1875
+
+3514:
+	Norm constant = 956.625
+
+3533:
+	Norm constant = 74.1875
+
+3535:
+	Norm constant = 368.9375
+
+3536:
+	Norm constant = 55.75
+
+3537:
+	Norm constant = 4120.5
+
+3538:
+	Norm constant = 2901.3125
+
+3545:
+	Norm constant = 217.6875
+
+3546:
+	Norm constant = 1894.3125
+
+3565:
+	Norm constant = 518.5625
+
+3583:
+	Norm constant = 135.125
+
+3600:
+	Norm constant = 209.5
+
+3604:
+	Norm constant = 706.4375
+
+3605:
+	Norm constant = 350.125
+
+3606:
+	Norm constant = 2910.3125
+
+3607:
+	Norm constant = 6851.25
+
+3609:
+	Norm constant = 22.6875
+
+3610:
+	Norm constant = 2685.4375
+
+3611:
+	Norm constant = 4016.375
+
+3612:
+	Norm constant = 495.9375
+
+3613:
+	Norm constant = 354.25
+
+3614:
+	Norm constant = 159.875
+
+3615:
+	Norm constant = 557.25
+
+3616:
+	Norm constant = 7471.0
+
+3617:
+	Norm constant = 44.0625
+
+3618:
+	Norm constant = 109.875
+
+3620:
+	Norm constant = 947.1875
+
+3631:
+	Norm constant = 28797.125
+
+3633:
+	Norm constant = 7397.0
+
+3634:
+	Norm constant = 4923.25
+
+3635:
+	Norm constant = 296.5625
+
+3636:
+	Norm constant = 76.5
+
+3637:
+	Norm constant = 24821.0
+
+3638:
+	Norm constant = 2463.125
+
+3649:
+	Norm constant = 146.875
+
+3650:
+	Norm constant = 80.4375
+
+3652:
+	Norm constant = 1540.9375
+
+3658:
+	Norm constant = 57.4375
+
+3661:
+	Norm constant = 2762.1875
+
+3662:
+	Norm constant = 59.0625
+
+3665:
+	Norm constant = 2772.0625
+
+3668:
+	Norm constant = 36965.375
+
+3670:
+	Norm constant = 5729.125
+
+3671:
+	Norm constant = 34233.3125
+
+3673:
+	Norm constant = 1463.4375
+
+3674:
+	Norm constant = 28379.4375
+
+3677:
+	Norm constant = 794.25
+
+3678:
+	Norm constant = 178.875
+
+3679:
+	Norm constant = 654.75
+
+3680:
+	Norm constant = 430.0
+
+3681:
+	Norm constant = 646.0625
+
+3682:
+	Norm constant = 462.4375
+
+3683:
+	Norm constant = 1036.9375
+
+3684:
+	Norm constant = 635.4375
+
+3695:
+	Norm constant = 262.1875
+
+3696:
+	Norm constant = 79.1875
+
+3697:
+	Norm constant = 281.4375
+
+3698:
+	Norm constant = 207.5
+
+3699:
+	Norm constant = 141.75
+
+3700:
+	Norm constant = 246.5
+
+3701:
+	Norm constant = 318.1875
+
+3702:
+	Norm constant = 92.5
+
+3705:
+	Norm constant = 11369.4375
+
+3708:
+	Norm constant = 49023.9375
+
+3712:
+	Norm constant = 7168.0625
+
+3713:
+	Norm constant = 103.0
+
+3717:
+	Norm constant = 61089.0625
+
+3719:
+	Norm constant = 1367.5625
+
+3722:
+	Norm constant = 71484.8125
+
+3727:
+	Norm constant = 195.4375
+
+3728:
+	Norm constant = 87.25
+
+3729:
+	Norm constant = 465.1875
+
+3731:
+	Norm constant = 662.875
+
+3733:
+	Norm constant = 3544.4375
+
+3735:
+	Norm constant = 21649.9375
+
+3736:
+	Norm constant = 33869.125
+
+3738:
+	Norm constant = 18602.5
+
+3740:
+	Norm constant = 973.75
+
+3741:
+	Norm constant = 5047.9375
+
+3742:
+	Norm constant = 21035.375
+
+3743:
+	Norm constant = 1517.0625
+
+3744:
+	Norm constant = 8226.0625
+
+3746:
+	Norm constant = 30845.6875
+
+3747:
+	Norm constant = 15559.0
+
+3751:
+	Norm constant = 589.9375
+
+3755:
+	Norm constant = 20374.3125
+
+3756:
+	Norm constant = 7749.5625
+
+3757:
+	Norm constant = 2805.75
+
+3758:
+	Norm constant = 3680.5
+
+3760:
+	Norm constant = 397.625
+
+3764:
+	Norm constant = 14962.0625
+
+3765:
+	Norm constant = 4663.125
+
+3768:
+	Norm constant = 8263.1875
+
+3772:
+	Norm constant = 29881.75
+
+3776:
+	Norm constant = 8292.6875
+
+3777:
+	Norm constant = 4.4375
+
+3778:
+	Norm constant = 24482.0625
+
+3779:
+	Norm constant = 3.9375
+
+3780:
+	Norm constant = 7081.125
+
+3785:
+	Norm constant = 50.125
+
+3789:
+	Norm constant = 27369.625
+
+3793:
+	Norm constant = 70653.0625
+
+3794:
+	Norm constant = 732.0
+
+3796:
+	Norm constant = 2593.1875
+
+3797:
+	Norm constant = 539.1875
+
+3800:
+	Norm constant = 112.25
+
+3801:
+	Norm constant = 1011.375
+
+3802:
+	Norm constant = 2305.5
+
+3805:
+	Norm constant = 46.0625
+
+3806:
+	Norm constant = 1953.9375
+
+3807:
+	Norm constant = 348.4375
+
+3808:
+	Norm constant = 176.8125
+
+3809:
+	Norm constant = 660.625
+
+3810:
+	Norm constant = 762.6875
+
+3811:
+	Norm constant = 9387.5
+
+3812:
+	Norm constant = 765.75
+
+3814:
+	Norm constant = 24.375
+
+3817:
+	Norm constant = 1377.75
+
+3821:
+	Norm constant = 10649.5
+
+3826:
+	Norm constant = 196.9375
+
+3827:
+	Norm constant = 88.625
+
+3832:
+	Norm constant = 18273.5
+
+3833:
+	Norm constant = 28755.0
+
+3836:
+	Norm constant = 33.5625
+
+3837:
+	Norm constant = 4784.125
+
+3838:
+	Norm constant = 295.3125
+
+3840:
+	Norm constant = 876.5
+
+3845:
+	Norm constant = 5396.5625
+
+3846:
+	Norm constant = 10043.75
+
+3850:
+	Norm constant = 84513.5
+
+3851:
+	Norm constant = 6.8125
+
+3856:
+	Norm constant = 133570.625
+
+3858:
+	Norm constant = 799.0625
+
+3859:
+	Norm constant = 592.5625
+
+3860:
+	Norm constant = 422.1875
+
+3861:
+	Norm constant = 499.3125
+
+3862:
+	Norm constant = 631.1875
+
+3863:
+	Norm constant = 675.3125
+
+3864:
+	Norm constant = 14185.8125
+
+3866:
+	Norm constant = 1828.8125
+
+3869:
+	Norm constant = 3941.3125
+
+3870:
+	Norm constant = 1064.9375
+
+3873:
+	Norm constant = 95770.1875
+
+3874:
+	Norm constant = 648.0
+
+3875:
+	Norm constant = 155220.375
+
+3876:
+	Norm constant = 3820.125
+
+3878:
+	Norm constant = 679.8125
+
+3879:
+	Norm constant = 35.75
+
+3912:
+	Norm constant = 28.8125
+
+3914:
+	Norm constant = 18304.0625
+
+3916:
+	Norm constant = 54207.5625
+
+3921:
+	Norm constant = 54404.9375
+
+3928:
+	Norm constant = 686.5625
+
+3931:
+	Norm constant = 6219.25
+
+3933:
+	Norm constant = 13557.625
+
+3936:
+	Norm constant = 1717.375
+
+3940:
+	Norm constant = 807.4375
+
+3942:
+	Norm constant = 1493.0
+
+3943:
+	Norm constant = 674.4375
+
+3947:
+	Norm constant = 17679.9375
+
+3948:
+	Norm constant = 686.9375
+
+3950:
+	Norm constant = 5792.4375
+
+3952:
+	Norm constant = 19.3125
+
+3954:
+	Norm constant = 11045.375
+
+3956:
+	Norm constant = 29456.5
+
+3957:
+	Norm constant = 14347.25
+
+3959:
+	Norm constant = 3642.25
+
+3960:
+	Norm constant = 492.625
+
+3963:
+	Norm constant = 388.125
+
+3965:
+	Norm constant = 774.625
+
+3967:
+	Norm constant = 2058.6875
+
+3968:
+	Norm constant = 2790.4375
+
+3969:
+	Norm constant = 22526.6875
+
+3970:
+	Norm constant = 15825.4375
+
+3973:
+	Norm constant = 23391.625
+
+3974:
+	Norm constant = 696.125
+
+875:
+	Norm constant = 55.5
+
+892:
+	Norm constant = 91.25
+
+1371:
+	Norm constant = 190.1875
+
+1513:
+	Norm constant = 712.25
+
+1528:
+	Norm constant = 457.1875
+
+1545:
+	Norm constant = 3528.125
+
+1563:
+	Norm constant = 224.25
+
+1594:
+	Norm constant = 482.75
+
+1612:
+	Norm constant = 75.375
+
+1616:
+	Norm constant = 1484.0
+
+1617:
+	Norm constant = 355.3125
+
+1643:
+	Norm constant = 27.75
+
+1652:
+	Norm constant = 186.5625
+
+1658:
+	Norm constant = 184.625
+
+1661:
+	Norm constant = 1293.1875
+
+1663:
+	Norm constant = 13.4375
+
+1683:
+	Norm constant = 221.0625
+
+1686:
+	Norm constant = 2171.5625
+
+1700:
+	Norm constant = 93.8125
+
+1729:
+	Norm constant = 51.875
+
+1754:
+	Norm constant = 17.75
+
+1759:
+	Norm constant = 60.25
+
+1760:
+	Norm constant = 1647.625
+
+1761:
+	Norm constant = 642.5625
+
+1879:
+	Norm constant = 469.125
+
+2019:
+	Norm constant = 933.5625
+
+2038:
+	Norm constant = 156.125
+
+2264:
+	Norm constant = 19.8125
+
+2329:
+	Norm constant = 28.125
+
+2543:
+	Norm constant = 3289.75
+
+2609:
+	Norm constant = 1271.375
+
+2613:
+	Norm constant = 997.5625
+
+2618:
+	Norm constant = 612.375
+
+2626:
+	Norm constant = 424.5
+
+2677:
+	Norm constant = 85.0
+
+2679:
+	Norm constant = 14.375
+
+2680:
+	Norm constant = 35.0625
+
+2684:
+	Norm constant = 53.125
+
+2707:
+	Norm constant = 41.8125
+
+2729:
+	Norm constant = 27.0625
+
+2826:
+	Norm constant = 87.6875
+
+2916:
+	Norm constant = 85.0625
+
+3037:
+	Norm constant = 83.625
+
+3235:
+	Norm constant = 214.6875
+
+3269:
+	Norm constant = 577.25
+
+3270:
+	Norm constant = 300.8125
+
+3371:
+	Norm constant = 4.25
+
+3589:
+	Norm constant = 38.8125
+
+3653:
+	Norm constant = 340.75
+
+3654:
+	Norm constant = 11.0
+
+3865:
+	Norm constant = 2882.9375
+
+2139:
+	Norm constant = 21.625
+
+3883:
+	Norm constant = 11.0625
+
+2166:
+	Norm constant = 4.5
+
+1547:
+	Norm constant = 2.625
+
+1332:
+	Norm constant = 5.25
+
+2319:
+	Norm constant = 4.5
+
+2800:
+	Norm constant = 4.9375
+
+3672:
+	Norm constant = 5.4375
+
+630:
+	Norm constant = 1.75
+
+1505:
+	Norm constant = 3.3125
+
+1506:
+	Norm constant = 3.3125
+
+1507:
+	Norm constant = 3.3125
+
+1597:
+	Norm constant = 5.875
+
+1602:
+	Norm constant = 3.3125
+
+1603:
+	Norm constant = 3.3125
+
+1607:
+	Norm constant = 3.3125
+
+1608:
+	Norm constant = 3.3125
+
+1689:
+	Norm constant = 3.3125
+
+1691:
+	Norm constant = 3.3125
+
+1692:
+	Norm constant = 3.3125
+
+1694:
+	Norm constant = 3.3125
+
+1696:
+	Norm constant = 3.3125
+
+1699:
+	Norm constant = 3.3125
+
+1742:
+	Norm constant = 4.125
+
+2138:
+	Norm constant = 3.3125
+
+2421:
+	Norm constant = 3.3125
+
+2633:
+	Norm constant = 1.875
+
+2894:
+	Norm constant = 1.875
+
+3100:
+	Norm constant = 2.5
+
+3788:
+	Norm constant = 2.5
+
+3823:
+	Norm constant = 1.75
+
+3962:
+	Norm constant = 1.75
+
+728:
+	Norm constant = 3.0
+
+1496:
+	Norm constant = 2.0
+
+1826:
+	Norm constant = 2.0
+
+1639:
+	Norm constant = 2.0
+
+1781:
+	Norm constant = 2.0
+
+1175:
+	Norm constant = 2.0
+
+1254:
+	Norm constant = 2.0
+
+1259:
+	Norm constant = 2.0
+
+2279:
+	Norm constant = 2.0
+
+2418:
+	Norm constant = 2.0
+
+1417:
+	Norm constant = 2.0
+
+1862:
+	Norm constant = 2.0
+
+1010:
+	Norm constant = 2.0
+
+1442:
+	Norm constant = 2.0
+
+2195:
+	Norm constant = 2.0
+
+1012:
+	Norm constant = 2.0
+
+1013:
+	Norm constant = 2.0
+
+1019:
+	Norm constant = 2.0
+
+1027:
+	Norm constant = 2.0
+
+1129:
+	Norm constant = 2.0
+
+1154:
+	Norm constant = 2.0
+
+1333:
+	Norm constant = 2.0
+
+1448:
+	Norm constant = 2.0
+
+1490:
+	Norm constant = 2.0
+
+1497:
+	Norm constant = 2.0
+
+1499:
+	Norm constant = 2.0
+
+1519:
+	Norm constant = 2.0
+
+1628:
+	Norm constant = 2.0
+
+1629:
+	Norm constant = 2.0
+
+1711:
+	Norm constant = 2.0
+
+1793:
+	Norm constant = 2.0
+
+1794:
+	Norm constant = 2.0
+
+1990:
+	Norm constant = 2.0
+
+2192:
+	Norm constant = 2.0
+
+1777:
+	Norm constant = 2.0
+
+1787:
+	Norm constant = 2.0
+
+2224:
+	Norm constant = 2.0
+
+1011:
+	Norm constant = 2.0
+
+2483:
+	Norm constant = 2.0
+
+2735:
+	Norm constant = 2.0
+
+1009:
+	Norm constant = 2.0
+
+2194:
+	Norm constant = 2.0
+
+2564:
+	Norm constant = 2.0
+
+2733:
+	Norm constant = 2.0
+
+1334:
+	Norm constant = 2.0
+
+1974:
+	Norm constant = 2.0
+
+2734:
+	Norm constant = 2.0
+
+1008:
+	Norm constant = 2.0
+
+2395:
+	Norm constant = 2.0
+
+1710:
+	Norm constant = 2.0
+
+1261:
+	Norm constant = 2.0
+
+1416:
+	Norm constant = 2.0
+
+1541:
+	Norm constant = 2.0
+
+1827:
+	Norm constant = 2.0
+
+2196:
+	Norm constant = 2.0
+
+2326:
+	Norm constant = 2.0
