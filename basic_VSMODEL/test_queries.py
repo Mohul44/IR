@@ -1,5 +1,4 @@
 import re # regex
-from collections import Counter
 import math 
 import pickle
 import time # for time taken calcuation
