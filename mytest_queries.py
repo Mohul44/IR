@@ -59,7 +59,7 @@ def display_k_docs(docs_dict,retir_k,sqrt_doc):
 	i = 1
 	for doc in retir_k:
 		doctitlee = docs_dict[doc]
-		print(str(i)+"  Document #" + str(doc) + " " + "Title: " + str(doctitlee) + "  score  " + str(float(retir_k[doc]/sqrt_doc)))  
+		print(str(i)+"  Document #" + str(doc) + " " + "Title: " + str(doctitlee) + "  score  " + str(float(retir_k[doc])))  
 		i = i+1
 		if(i>k):break
 
