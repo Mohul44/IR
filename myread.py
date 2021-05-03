@@ -54,7 +54,7 @@ def normalize(doc_id,tokens,weight,square_weight,tdf,doc_text):
             if word in tdf:
                 if docid in tdf[word]:
                     tdf[word][docid] = tdf[word][docid]+1
-                    weight[word][docid] = 1 + np.log(tdf[word][docid])
+                    weight[word][docid] = 1 + np.log10(tdf[word][docid])
                 else:
                     tdf[word][docid] = 1
                     weight[word][docid] = 1
@@ -87,8 +87,8 @@ def normalize(doc_id,tokens,weight,square_weight,tdf,doc_text):
             idf[word] = 0
         else:
             idf[word] = np.log10(len(doc_id)/len(weight[word]))
-            print(word)
-            print(idf[word])
+            #print(word)
+            #print(idf[word])
 
 
 
