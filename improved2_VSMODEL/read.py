@@ -7,17 +7,14 @@ import re
 import math
 import operator
 import string
-# import nltk
-
-# try:
-#     nltk.data.find('tokenizers/punkt')
-# except LookupError:
-#     nltk.download('punkt')
 
 
 
-#Normalizes the index scores.
+
 def normalize(data_index):
+    '''
+    This function is used to calculate the normalisation constant document wise ad store it in a 'normalisation index'
+    '''
     for word,tp in data_index.items():
         posting_list = tp[0]
         df = tp[1]
@@ -29,22 +26,39 @@ def normalize(data_index):
             norm[doc_id] = norm.get(doc_id,0) + (tf**2)
 
 
-#Updates the main index using the temporary index created for document.
+
 def update_index(temp_index,data_index,doc_id):
-	for word,tf in temp_index.items():
-		wordTuple = data_index.get(word,([],0))
-		post = wordTuple[0]
-		post.append((doc_id, tf))
-		data_index[word] = (post,wordTuple[1]+1)
+    '''
+    This function is used to populate the main index which stores the terms along with their document frequencies and posting lists
+
+    '''
+    for word,tf in temp_index.items():
+        wordTuple = data_index.get(word,([],0))
+        post = wordTuple[0]
+        post.append((doc_id, tf))
+        data_index[word] = (post,wordTuple[1]+1)
 
 
 def update_temp_index(word,temp_index):
+    '''
+    This function fills the temporary index 
+    Structure of temporary index index -  
+    {
+    'term1':tf,
+    'term2':tf,
+    ...   
+    }
+    '''
     tf = temp_index.get(word,0)
     tf = tf + 1 
     temp_index[word] = tf
 
-#Reads a document and updates the index.
+
 def add_doc_to_index(text, title, doc_id, data_index):
+    '''
+    This function initialises a temporary index which stores the inverted list of one document and 
+    fills the temporary index and main index using temporary index
+    '''
     temp_index = {}
     tokens = preprocess_query(text)
     for token in tokens:
@@ -135,15 +149,15 @@ norm_file.close()
 output_file = open("readable_content_index_2.txt","w")
 print("\nContent index saved in readable format in 'readable_content_index_2.txt'.")
 for key,val in primIndex.items():
-	output_file.write("\n\n"+key+":")
-	output_file.write("\n\tDF = "+str(val[1]))
-	output_file.write("\n\tPosting List: "+str(val[0]))
+    output_file.write("\n\n"+key+":")
+    output_file.write("\n\tDF = "+str(val[1]))
+    output_file.write("\n\tPosting List: "+str(val[0]))
 output_file.close()
 
 output_file = open("readable_content_norm_2.txt","w")
 for key,val in norm_data.items():
-	output_file.write("\n\n"+key+":")
-	output_file.write("\n\tNorm constant = "+str(val))
+    output_file.write("\n\n"+key+":")
+    output_file.write("\n\tNorm constant = "+str(val))
 output_file.close()
 
 print("\nNumber of documents parsed = "+str(doc_count))

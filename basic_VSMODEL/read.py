@@ -7,29 +7,34 @@ import re
 import math
 import operator
 import string
-# import nltk
 
-# try:
-#     nltk.data.find('tokenizers/punkt')
-# except LookupError:
-#     nltk.download('punkt')
 
-#Updates the main index using the temporary index created for document.
+
 def update_index(temp_index,data_index,doc_id):
-	for word,tf in temp_index.items():
-		wordTuple = data_index.get(word,([],0))
-		post = wordTuple[0]
-		post.append((doc_id, tf))
-		data_index[word] = (post,wordTuple[1]+1)
+    '''
+    This function is used to populate the main index which stores the terms along with their document frequencies and posting lists
+    '''
+    for word,tf in temp_index.items():
+        wordTuple = data_index.get(word,([],0))
+        post = wordTuple[0]
+        post.append((doc_id, tf))
+        data_index[word] = (post,wordTuple[1]+1)
 
 
 def update_temp_index(word,temp_index):
+    '''
+    This function fills the temporary index 
+    '''
     tf = temp_index.get(word,0)
     tf = tf + 1 
     temp_index[word] = tf
 
-#Reads a document and updates the index.
+
 def add_doc_to_index(text, title, doc_id, data_index):
+    '''
+    This function initialises a temporary index which stores the inverted list of one document and 
+    fills the temporary index and main index using temporary index
+    '''
     temp_index = {}
     tokens = preprocess_query(text)
     for token in tokens:
@@ -71,6 +76,9 @@ def open_file(file_name):
 
 
 def read_file(file_name, data_index):
+    '''
+    This function parses the wiki file using html parser and extracts document wise id, title, text 
+    '''
     global id_title_index
     data = open_file(file_name=file_name)
     docs = BeautifulSoup(data, "html.parser")
@@ -110,9 +118,9 @@ index_file.close()
 output_file = open("readable_content_index.txt","w")
 print("\nContent index saved in readable format in 'readable_content_index.txt'.")
 for key,val in primIndex.items():
-	output_file.write("\n\n"+key+":")
-	output_file.write("\n\tDF = "+str(val[1]))
-	output_file.write("\n\tPosting List: "+str(val[0]))
+    output_file.write("\n\n"+key+":")
+    output_file.write("\n\tDF = "+str(val[1]))
+    output_file.write("\n\tPosting List: "+str(val[0]))
 output_file.close()
 
 

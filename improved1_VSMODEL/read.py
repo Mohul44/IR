@@ -7,24 +7,26 @@ import re
 import math
 import operator
 import string
-# import nltk
 
-# try:
-#     nltk.data.find('tokenizers/punkt')
-# except LookupError:
-#     nltk.download('punkt')
 
 content_wt=0.4
 title_wt=0.6
 
 def champion_list(data_index):
+    '''
+    This function is used to sort the documents in reverse order tf-custom(tf[1]*title_wt+tf[0]*content_wt) wise, 
+    and thus creates a champion list by keeping only top 100 documents in posting list for each term
+    '''
     for word,tp in data_index.items():
         posting_list = tp[0]
         posting_list.sort(key=operator.itemgetter(1),reverse=True)
         data_index[word] = (posting_list[0:100],tp[1])   
 
-#Normalizes the index scores.
+
 def normalize(data_index):
+    '''
+    This function is used to calculate the normalisation constant document wise ad store it in a 'normalisation index'
+    '''
     for word,tp in data_index.items():
         posting_list = tp[0]
         df = tp[1]
@@ -35,29 +37,30 @@ def normalize(data_index):
             #Updating the normalization factor for the document.
             norm[doc_id] = norm.get(doc_id,0) + (tf**2)
 
-    # #Getting the value of normalization factor for each document.
-    # for doc_id in norm:
-    # 	norm[doc_id] = math.sqrt(norm[doc_id])
 
-    # #Normalizing the scores of each term-document pair.
-    # for word,tp in data_index.items():
-    #     posting_list = tp[0]
-    #     for i in range(len(posting_list)):
-    #         doc_id = posting_list[i][0]
-    #         wt = posting_list[i][1]
-    #         new_wt = wt/norm[doc_id]
-    #         posting_list[i] = (doc_id,new_wt)
 
-#Updates the main index using the temporary index created for document.
 def update_index(temp_index,data_index,doc_id):
-	for word,tf in temp_index.items():
-		wordTuple = data_index.get(word,([],0))
-		post = wordTuple[0]
-		post.append((doc_id, float(tf[1]*title_wt+tf[0]*content_wt)))
-		data_index[word] = (post,wordTuple[1]+1)
+    '''
+    This function is used to populate the main index which stores the terms along with their document frequencies and posting lists
+    '''
+    for word,tf in temp_index.items():
+        wordTuple = data_index.get(word,([],0))
+        post = wordTuple[0]
+        post.append((doc_id, float(tf[1]*title_wt+tf[0]*content_wt)))
+        data_index[word] = (post,wordTuple[1]+1)
 
 
 def update_temp_index(word,temp_index,flag):
+    '''
+    This function fills the temporary index.
+    Structure of temporary index index -  
+    {
+    'term1':(tf-title,tf-content),
+    'term2':(tf-title,tf-content),
+    ...   
+    }
+    Flag variable tells whether to update tf-title(flag==2) or tf-content(flag==1)
+    '''
     arr_tuple = temp_index.get(word,(0,0))
     arr = list(arr_tuple)  #since tuples immutable so converting to list
     if flag==1:
@@ -66,28 +69,13 @@ def update_temp_index(word,temp_index,flag):
         arr[1] = arr[1] + 1
     temp_index[word] = arr
 
-#Reads a document and updates the index.
+
 def add_doc_to_index(text, title, doc_id, data_index):
+    '''
+    This function initialises a temporary index which stores the inverted list of one document and 
+    fills the temporary index and main index using temporary index
+    '''
     temp_index = {}
-    # # for line in text.splitlines():
-    # text = text.replace('-', ' ') #splitting - words (decide whether to split or not)
-    # title= title.replace('-', ' ')
-    # for word in nltk.word_tokenize(text):
-    #     # for word in line.strip().split(" "):
-    #     word = word.lower()        #Converting word to lower case.
-    # #If word only has alphabet characters, update index.
-    #     if word.isalpha():
-    #         update_temp_index(word,temp_index,1)
-	# #If word has non-alphabet characters, remove them first.
-    #     else:
-    #         extract_word = []
-    #         for c in word:
-    #             if c.isalpha():
-    #                 extract_word.append(c)
-    #         if len(extract_word)>0:
-    #             str1=''
-    #             extract_word= str1.join(extract_word)
-    #             update_temp_index(extract_word,temp_index,1)
     body_tokens = preprocess_query(text)
     for token in body_tokens:
         update_temp_index(token,temp_index,1)
@@ -96,23 +84,7 @@ def add_doc_to_index(text, title, doc_id, data_index):
     for token in title_tokens:
         update_temp_index(token,temp_index,2)
 
-    # for word in nltk.word_tokenize(title):
-    #     # for word in line.strip().split(" "):
-    #     word = word.lower()        #Converting word to lower case.
-    # #If word only has alphabet characters, update index.
-    #     if word.isalpha():
-    #         update_temp_index(word,temp_index,2)
-	# #If word has non-alphabet characters, remove them first.
-    #     else:
-    #         extract_word = []
-    #         for c in word:
-    #             if c.isalpha():
-    #                 extract_word.append(c)
-    #         if len(extract_word)>0:
-    #             str1=''
-    #             extract_word= str1.join(extract_word)
-    #             update_temp_index(extract_word,temp_index,2)
-    # print(temp_index)
+
     update_index(temp_index,data_index,doc_id)
 
 def preprocess_query(text):
@@ -154,6 +126,9 @@ def open_file(file_name):
 
 
 def read_file(file_name, data_index):
+    '''
+    This function parses the wiki file using html parser and extracts document wise id, title, text 
+    '''
     global id_title_index
     data = open_file(file_name=file_name)
     docs = BeautifulSoup(data, "html.parser")
@@ -203,15 +178,15 @@ norm_file.close()
 output_file = open("readable_content_index_1.txt","w")
 print("\nContent index saved in readable format in 'readable_content_index_1.txt'.")
 for key,val in primIndex.items():
-	output_file.write("\n\n"+key+":")
-	output_file.write("\n\tDF = "+str(val[1]))
-	output_file.write("\n\tPosting List: "+str(val[0]))
+    output_file.write("\n\n"+key+":")
+    output_file.write("\n\tDF = "+str(val[1]))
+    output_file.write("\n\tPosting List: "+str(val[0]))
 output_file.close()
 
 output_file = open("readable_content_norm_1.txt","w")
 for key,val in norm_data.items():
-	output_file.write("\n\n"+key+":")
-	output_file.write("\n\tNorm constant = "+str(val))
+    output_file.write("\n\n"+key+":")
+    output_file.write("\n\tNorm constant = "+str(val))
 output_file.close()
 
 print("\nNumber of documents parsed = "+str(doc_count))
