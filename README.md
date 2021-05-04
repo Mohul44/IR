@@ -22,4 +22,4 @@ To run the query
    $ cd model_name_VSMODEL
    $ python test_queries.py
 ```
-A file named readable_index.txt is generated which contains indexes in a readable format.
+A file named readable_content_index.txt is generated which contains indexes in a readable format.
